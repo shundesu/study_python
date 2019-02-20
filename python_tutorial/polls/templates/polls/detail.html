@@ -1,0 +1,39 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'polls/style.css' %}">
+
+
+<body>
+  <div class="l-page">
+    <div class="c-mainvisual">
+      <div class="c-mainvisual__inner">
+        <h1 class="c-mainvisual__title">Vote Application With Django</h1>
+      </div>
+    </div>
+    <div class="c-breadcrumb">
+      <div class="c-breadcrumb__inner">
+        <span class="c-breadcrumb__item"><a href="{% url 'polls:index' %}">TOP</a></span>
+        <span class="c-breadcrumb__item">{{ question.question_text }}</span>
+      </div>
+    </div>
+    <div class="c-container p-detail">
+      <div class="c-container__inner">
+        <h2 class="c-title-lv1">{{ question.question_text }}</h2>
+          {% if error_message %}
+          <p><strong>{{ error_message }}</strong></p>
+          {% endif %}
+          <form action="{% url 'polls:vote' question.id %}" method="post">
+            {% csrf_token %}
+            {% for choice in question.choice_set.all %}
+            <div class="p-detail__radio">
+              <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
+              <label for="choice{{ forloop.counter }}">
+                {{choice.choice_text}}
+              </label>
+            </div>
+            {% endfor %}
+            <input type="submit" value="Vote">
+          </form>
+      </div>
+    </div>
+  </div>
+</body>

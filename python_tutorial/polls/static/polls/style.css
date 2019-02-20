@@ -1,0 +1,142 @@
+@import './base.css';
+/*  */
+/* layout */
+.l-page {
+}
+
+
+/*  */
+/* object */
+/* index */
+.p-index__list {
+}
+/* detail */
+.p-detail__radio:not(:first-child) {
+  margin-top: 15px;
+}
+.p-detail input[type="radio"]{
+  border: 1px solid #555;
+  padding: 5;
+  border-radius: 50%;
+  position: relative;
+  top: 4px;
+}
+.p-detail input[type="radio"]:checked{
+  background-color: #285943;
+  border: 1px solid #285943;
+}
+.p-detail label {
+  font-size: 1.6rem;
+}
+.p-detail input[type="submit"] {
+  display: block;
+  padding: 10px 40px;
+  border: 1px solid #555;
+  margin-top: 30px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.p-detail input[type="submit"]:hover {
+  background-color: #285943;
+  color: #ffffff;
+}
+
+/* component */
+.c-title-lv1 {
+  font-size: 3rem;
+  color: #0c0c0c;
+  font-weight: bold;
+}
+.c-mainvisual {
+  width: 100%;
+  background-color: #285943;
+}
+.c-mainvisual__inner {
+  width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 80px;
+}
+.c-mainvisual__title {
+  font-size: 5rem;
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.c-breadcrumb {
+  width: 100%;
+  background-color: #f2f2f2
+}
+.c-breadcrumb__inner {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 0;
+  display: flex;
+}
+.c-breadcrumb__item {
+  display: inline-block;
+  position: relative;
+  font-size: 1.0rem;
+}
+.c-breadcrumb__item:not(:last-child) {
+    position: relative;
+    margin-right: 40px;
+}
+.c-breadcrumb__item:not(:last-child)::after {
+    position: absolute;
+    top: 0px;
+    right: -25px;
+    display: block;
+    width: 8px;
+    height: 8px;
+    content: '';
+    transform: rotate(45deg);
+    opacity: .3;
+    border-top: 2px solid #555;
+    border-right: 2px solid #555;
+}
+.c-container {
+  width: 100%;
+  margin-top: 30px;
+}
+.c-container__inner {
+  width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.c-linkto {
+  position: relative;
+  display: flex;
+}
+.c-linkto:not(:nth-of-type(1)) {
+  margin-top: 20px;
+}
+.c-linkto span {
+    font-weight: bold;
+}
+.c-linkto a {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 1.6rem;
+  transition: .3s;
+  position: relative;
+  color: #8CD790;
+}
+.c-linkto a:hover {
+    color: #77AF9C;
+}
+.c-linkto a:hover:before {
+    width: 100%;
+}
+.c-linkto a::before {
+    position: absolute;
+    top: 1.3em;
+    left: 0;
+    display: inline-block;
+    width: 0;
+    height: 2px;
+    content: '';
+    transition: .25s;
+    background: #77AF9C;
+}

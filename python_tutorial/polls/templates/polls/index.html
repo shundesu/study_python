@@ -1,0 +1,35 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'polls/style.css' %}">
+
+<body>
+  <div class="l-page">
+    <div class="c-mainvisual">
+      <div class="c-mainvisual__inner">
+        <h1 class="c-mainvisual__title">Vote Application With Django</h1>
+      </div>
+    </div>
+    <div class="c-breadcrumb">
+      <div class="c-breadcrumb__inner">
+        <span class="c-breadcrumb__item">TOP</span>
+      </div>
+    </div>
+    <div class="c-container">
+      <div class="c-container__inner">
+        {% if latest_question_list %}
+         <ul class="p-index__list">
+           {% for question in latest_question_list %}
+             <li class="c-linkto">
+               <span>Q.</span>
+               <a href="{% url 'polls:detail' question.id %}">
+                 {{question.question_text}}
+               </a>
+             </li>
+           {% endfor %}
+         </ul>
+        {% else %}
+         <p>No polls are available.</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</body>

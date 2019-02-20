@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="ja" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>MediaWiki API の結果 - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"Special","wgCanonicalSpecialPageName":"ApiHelp","wgNamespaceNumber":-1,"wgPageName":"特別:ApiHelp","wgTitle":"ApiHelp","wgCurRevisionId":0,"wgRevisionId":0,"wgArticleId":0,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"ja","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"ja","wgMonthNames":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgMonthNamesShort":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgRelevantPageName":"特別:ApiHelp","wgRelevantArticleId":0,"wgRequestId":"XD6mGQpAIDYAAAhDZ-QAAACF","wgCSPNonce":false,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikiEditorEnabledModules":[],"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsShouldSendModuleToUser":true,"wgPopupsConflictsWithNavPopupGadget":false,"wgVisualEditor":{"pageLanguageCode":"ja","pageLanguageDir":"ltr","pageVariantFallbacks":"ja","usePageImages":true,"usePageDescriptions":true},"wgMFExpandAllSectionsUserOption":true,"wgMFEnableFontChanger":true,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgWMESchemaEditAttemptStepOversample":false,"wgULSCurrentAutonym":"日本語","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgScoreNoteLanguages":{"arabic":"العربية","catalan":"català","deutsch":"Deutsch","english":"English","espanol":"español","italiano":"italiano","nederlands":"Nederlands","norsk":"norsk","portugues":"português","suomi":"suomi","svenska":"svenska","vlaams":"West-Vlams"},"wgScoreDefaultNoteLanguage":"nederlands","wgCentralAuthMobileDomain":false,"wgCodeMirrorEnabled":true,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":true});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.apipretty":"ready","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.skinning.interface":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready"});mw.loader.implement("user.options@1smlfrf",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"ja"});
+});mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});RLPAGEMODULES=["site","mediawiki.page.startup","mediawiki.page.ready","ext.gadget.ReferenceTooltips","ext.gadget.suppressEnterAtSummaryBox","ext.gadget.checkSignature","ext.gadget.WikiMiniAtlas","ext.gadget.switcher","ext.centralauth.centralautologin","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.compactlinks","ext.uls.interface","ext.centralNotice.geoIP"];mw.loader.load(RLPAGEMODULES);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=ja&amp;modules=ext.3d.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.apipretty%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface&amp;only=styles&amp;skin=apioutput"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=ja&amp;modules=startup&amp;only=scripts&amp;skin=apioutput"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=ja&amp;modules=site.styles&amp;only=styles&amp;skin=apioutput"/>
+<meta name="generator" content="MediaWiki 1.33.0-wmf.12"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (ja)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//ja.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="WikipediaのAtomフィード" href="/w/index.php?title=%E7%89%B9%E5%88%A5:%E6%9C%80%E8%BF%91%E3%81%AE%E6%9B%B4%E6%96%B0&amp;feed=atom"/>
+<link rel="canonical" href="https://ja.wikipedia.org/wiki/%E7%89%B9%E5%88%A5:ApiHelp"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=ja&amp;modules=html5shiv&amp;only=scripts&amp;skin=vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns--1 ns-special mw-special-ApiHelp page-特別_ApiHelp rootpage-特別_ApiHelp skin-apioutput action-view">
+		<div class="mw-body" role="main">
+			<h1 class="firstHeading">MediaWiki API の結果</h1>
+			<div class="mw-body-content">
+				<div id="mw-content-text"><div class="api-pretty-header"><p>This is the HTML representation of the XML format. HTML is good for debugging, but is unsuitable for application use.
+</p><p>Specify the <var>format</var> parameter to change the output format. To see the non-HTML representation of the XML format, set <a class="external text" href="https://ja.wikipedia.org/w/api.php?format=xml&amp;action=query&amp;prop=revisions&amp;rvprop=content&amp;titles=ELLEGARDEN"><kbd>format=xml</kbd></a>.
+</p><p>See the <a href="https://www.mediawiki.org/wiki/API" class="extiw" title="mw:API">complete documentation</a>, or the <a href="/wiki/%E7%89%B9%E5%88%A5:ApiHelp/main" title="特別:ApiHelp/main">API help</a> for more information.
+</p></div><div dir="ltr"><div class="mw-highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot;?&gt;</span>
+<span class="nt">&lt;api</span> <span class="na">batchcomplete=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;warnings&gt;</span>
+    <span class="nt">&lt;main</span> <span class="na">xml:space=</span><span class="s">&quot;preserve&quot;</span><span class="nt">&gt;</span>Subscribe to the mediawiki-api-announce mailing list at <span class="ni">&amp;lt;</span>https://lists.wikimedia.org/mailman/listinfo/mediawiki-api-announce<span class="ni">&amp;gt;</span> for notice of API deprecations and breaking changes. Use [[Special:ApiFeatureUsage]] to see usage of deprecated features by your application.<span class="nt">&lt;/main&gt;</span>
+    <span class="nt">&lt;revisions</span> <span class="na">xml:space=</span><span class="s">&quot;preserve&quot;</span><span class="nt">&gt;</span>Because &quot;rvslots&quot; was not specified, a legacy format has been used for the output. This format is deprecated, and in the future the new format will always be used.<span class="nt">&lt;/revisions&gt;</span>
+  <span class="nt">&lt;/warnings&gt;</span>
+  <span class="nt">&lt;query&gt;</span>
+    <span class="nt">&lt;pages&gt;</span>
+      <span class="nt">&lt;page</span> <span class="na">_idx=</span><span class="s">&quot;244776&quot;</span> <span class="na">pageid=</span><span class="s">&quot;244776&quot;</span> <span class="na">ns=</span><span class="s">&quot;0&quot;</span> <span class="na">title=</span><span class="s">&quot;ELLEGARDEN&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;revisions&gt;</span>
+          <span class="nt">&lt;rev</span> <span class="na">contentformat=</span><span class="s">&quot;text/x-wiki&quot;</span> <span class="na">contentmodel=</span><span class="s">&quot;wikitext&quot;</span> <span class="na">xml:space=</span><span class="s">&quot;preserve&quot;</span><span class="nt">&gt;</span>{{Infobox Musician <span class="ni">&amp;lt;</span>!-- プロジェクト:音楽家を参照 --<span class="ni">&amp;gt;</span>
+|名前= ELLEGARDEN
+|画像= 
+|画像説明= 
+|画像サイズ= <span class="ni">&amp;lt;</span>!-- サイズが幅250ピクセルに満たない場合のみ記入 --<span class="ni">&amp;gt;</span>
+|画像補正= <span class="ni">&amp;lt;</span>!-- 画像の横幅が広く、高さが小さい場合に“yes”を記入 --<span class="ni">&amp;gt;</span>
+|背景色= band
+|別名= 
+|出身地= {{JPN}}・[[千葉県]][[市川市]][[八幡 (市川市)|八幡]]
+|ジャンル= [[パンク・ロック]]<span class="ni">&amp;lt;</span>ref name=&quot;cubeellegarden&quot;<span class="ni">&amp;gt;</span>[http://www.cube-music.com/j-artists/band-group/ellegarden/ ELLEGARDEN - マガーデン] - キューブミュージック・2014年9月5日閲覧。<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;&amp;lt;</span>br /<span class="ni">&amp;gt;</span>[[オルタナティヴ・ロック]]<span class="ni">&amp;lt;</span>br /<span class="ni">&amp;gt;</span>[[エモ]]<span class="ni">&amp;lt;</span>ref name=&quot;cubeellegarden&quot; /<span class="ni">&amp;gt;&amp;lt;</span>br /<span class="ni">&amp;gt;</span>[[パワー・ポップ]]<span class="ni">&amp;lt;</span>br /<span class="ni">&amp;gt;</span>[[ポップ・パンク]]
+|活動期間= [[1998年]] - [[2008年]]<span class="ni">&amp;lt;</span>br/<span class="ni">&amp;gt;</span>[[2018年]] -
+|レーベル= Dynamord Label
+|事務所= [[グローイングアップ (企業)|GROWING UP]]
+|共同作業者= 
+|公式サイト= [http://www.ellegarden.jp/ ELLEGARDEN official website]
+|メンバー= [[細美武士]]（[[ボーカル]]・[[ギター]]）<span class="ni">&amp;lt;</span>br/<span class="ni">&amp;gt;</span>[[生形真一]]（ギター・[[コーラス (ポピュラー音楽)|コーラス]]）<span class="ni">&amp;lt;</span>br /<span class="ni">&amp;gt;</span>高田雄一（[[ベース (弦楽器)|ベース]]・コーラス）<span class="ni">&amp;lt;</span>br/<span class="ni">&amp;gt;</span> 高橋宏貴（[[ドラムセット|ドラムス]]・コーラス）
+|旧メンバー= <span class="ni">&amp;lt;</span>!-- グループのみ --<span class="ni">&amp;gt;</span>
+}}
+&#39;&#39;&#39;ELLEGARDEN&#39;&#39;&#39;（エルレガーデン、略称：&#39;&#39;&#39;エルレ&#39;&#39;&#39;）は、[[日本]]の[[ロック (音楽)|ロック]][[バンド (音楽)|バンド]]<span class="ni">&amp;lt;</span>ref name=&quot;cubeellegarden&quot; /<span class="ni">&amp;gt;</span>。レーベルはDynamord Label、事務所は[[グローイングアップ (企業)|GROWING UP]]。
+
+== メンバー ==
+
+*&#39;&#39;&#39;[[細美武士|細美 武士]]&#39;&#39;&#39;（ほそみ たけし、{{生年月日と年齢|1973|2|22}} - <span class="ni">&amp;lt;</span>ref name=&quot;rockinonhosomi&quot;<span class="ni">&amp;gt;</span>{{cite web|url=https://rockinon.com/artist/6033|title=細美武士の記事まとめ|accessdate=2018-07-16|date=|publisher=[[ロッキング・オン|rockinon.com]]}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>）
+**[[ボーカル]]と[[リズムギター|サイドギター]]を担当<span class="ni">&amp;lt;</span>ref name=&quot;oriconp&quot;<span class="ni">&amp;gt;</span>{{Cite web|url=https://www.oricon.co.jp/prof/283436/profile/|title=ホームELLEGARDENプロフィール|accessdate=2018-05-23|publisher=oricon}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。
+**バンドの活動休止後の2008年からは[[the HIATUS]]の、2015年からは[[MONOEYES]]のボーカル/ギターとしても活動<span class="ni">&amp;lt;</span>ref name=&quot;rockinonhosomi&quot; /<span class="ni">&amp;gt;</span>。
+*&#39;&#39;&#39;[[生形真一|生形 真一]]&#39;&#39;&#39;（うぶかた しんいち、{{生年月日と年齢|1976|9|30}} - {{要出典|date=2018年5月}}）
+**[[リードギター]]と[[コーラス (ポピュラー音楽)|コーラス]]を担当<span class="ni">&amp;lt;</span>ref name=&quot;oriconp&quot; /<span class="ni">&amp;gt;</span>。ELLEGARDENの[[リーダー]]。
+**バンドの活動休止後の2008年から[[Nothing&#39;s Carved In Stone]]のギタリストとしても活動<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{cite web|url=https://rockinon.com/artist/5081|title=Nothing&#39;s Carved In Stone 
+の記事まとめ|accessdate=2018-07-16|date=|publisher=[[ロッキング・オン|rockinon.com]]}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。
+**[[グリーン・デイ]]の[[ビリー・ジョー・アームストロング]]のようなギタリストをもっと評価するべきだと語ったことがある<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{Cite book|和書|title=GiGS 2008年12月号　[[月刊ギグス]]|year=2008|publisher=[[シンコーミュージック・エンタテイメント]]|page=}} <span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。
+*&#39;&#39;&#39;高田 雄一&#39;&#39;&#39;（たかだ ゆういち、{{生年月日と年齢|1976|7|23}} - {{要出典|date=2018年5月}}）
+**[[ベース (弦楽器)|ベース]]とコーラスを担当<span class="ni">&amp;lt;</span>ref name=&quot;oriconp&quot; /<span class="ni">&amp;gt;</span>。
+** 2018年5月からMAYKIDZのベーシストとしても活動<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{Cite web|url=https://natalie.mu/music/news/282499|title=エルレ高田雄一が新バンドMAYKIDZ結成、月末に1stアルバム＆ワンマン|accessdate=2018-05-23|publisher=音楽ナタリー}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。
+*&#39;&#39;&#39;高橋 宏貴&#39;&#39;&#39;（たかはし ひろたか、{{生年月日と年齢|1974|10|29}} - {{要出典|date=2018年5月}}）
+**[[ドラムセット|ドラムス]]とコーラスを担当<span class="ni">&amp;lt;</span>ref name=&quot;oriconp&quot; /<span class="ni">&amp;gt;</span>。バンドの名付け親{{要出典|date=2018年5月}}。
+** バンドの活動休止後の2009年に[[Scars Borough]]を結成（2016年3月から活動休止）<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{Cite web|url=https://rockinon.com/news/detail/17153|title=ELLEGARDEN、高橋宏貴が新バンド結成を発表!ミニアルバムの発売も決定!|accessdate=2018-05-23|publisher=rockn&#39;on}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{Cite web|url=http://scarsborough.com/|title=Topページ|accessdate=2018-05-23|publisher=Scars Borough公式サイト}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。また2010年3月、[[THE PREDATORS]]にドラマーとして加入。
+
+== 概要 ==
+細美武士（Vo,G）、生形真一（G）、高田雄一（B）、高橋宏貴（Dr）の4人からなるロックバンド<span class="ni">&amp;lt;</span>ref name=&quot;rockinonartist&quot;<span class="ni">&amp;gt;</span>{{cite web|url= https://rockinon.com/artist/578 |title= ELLEGARDEN (エレガーデン) の記事まとめ |date= |accessdate= 2018-07-16 |publisher= [[ロッキング・オン|rockinon.com]] }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。1998年12月末に千葉県で結成<span class="ni">&amp;lt;</span>ref name=&quot;rockinonartist&quot; /<span class="ni">&amp;gt;</span>。2001年にアルバム『ELLEGARDEN』で全国デビュー。5枚のスタジオ・アルバムをリリースし、2006年11月発売のアルバム『ELEVEN FIRE CRACKER』はインディーズリリースながらオリコンチャート初登場1位を記録、2007年3月には幕張メッセでのワンマンライブを成功させる<span class="ni">&amp;lt;</span>ref name=&quot;natalieartist&quot;<span class="ni">&amp;gt;</span>{{cite web|url= https://natalie.mu/music/artist/850 |title= ELLEGARDENの記事まとめ |date= |accessdate= 2018-07-16 |publisher= [[ナタリー (ニュースサイト)|音楽ナタリー]] }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。作品制作においてメンバー間にモチベーションの差が出てきたことを理由に、2008年より活動を休止<span class="ni">&amp;lt;</span>ref name=&quot;natalieartist&quot; /<span class="ni">&amp;gt;</span>。2018年、約10年ぶりとなる活動再開を発表<span class="ni">&amp;lt;</span>ref name=&quot;rockinonartist&quot; /<span class="ni">&amp;gt;</span>。
+=== バンド名の由来 ===
+高橋は[[1998年]][[12月31日]]に開催されるライブチケットを印刷する際、どこにもない個性的なバンド名を付したいと考え、[[昭文社]]発行の「漢字用語辞典・外来語辞典」をめくり、ふさわしい言葉を探した<span class="ni">&amp;lt;</span>ref name=&quot;HanreiTimes&quot;<span class="ni">&amp;gt;</span>判例タイムズ1269号、288頁。<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。そして高橋は、「ELLE」という単語に知的な響きを、「GARDEN」という単語に馬鹿馬鹿しさを感じ、これらを組み合わせてバンド名とした<span class="ni">&amp;lt;</span>ref group=&quot;注&quot;<span class="ni">&amp;gt;</span>「ELLE」とはドイツ語で、「骨尺」という意味で、長さの単位（55 - 85cm）である。<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。
+=== アルバム名 ===
+一部例外を除き、各アルバム名には収録曲の歌詞の一部が使われている。
+
+* DON&#39;T TRUST ANYONE BUT US
+
+: 先行の2ndシングル「指輪」のカップリング曲と同名。ただし、同曲は本作には収録されていない。
+
+* My Own Destruction
+
+: 収録曲「Jamie」の歌詞の一部。
+
+* BRING YOUR BOARD!!
+
+: 収録曲「Surfrider Association」の歌詞の一部。ただし、曲中では「bring &#39;&#39;&#39;&#39;&#39;my&#39;&#39;&#39;&#39;&#39; board」。
+
+* Pepperoni Quattro
+
+: 収録曲「Pizza Man」の歌詞の一部。
+
+* RIOT ON THE GRILL
+
+: 収録曲「BBQ Riot Song」の歌詞の一部。
+
+* ELEVEN FIRE CRACKERS
+
+: 収録が計11曲であることと、収録曲「Fire Cracker」の曲名より。
+
+=== 逸話 ===
+
+* フランスのファッションブランドである「ELLE」に、[[商標|商標権]]の侵害として告訴された。[[2007年]][[5月16日]]、[[東京地方裁判所|東京地裁]]はこれらの訴えを認め、[[不正競争防止法]]違反として該当するELLEGARDENのグッズなどの販売を一部差し止める[[判決]]を下した<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>[http://www.ellegarden.jp/ja/20070517.html オフィシャルサイト日本語版（2007年5月17日更新分）]<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。[[2008年]][[3月19日]]、[[東京高等裁判所|東京高裁]]は上記訴訟の[[控訴審]]において「ELLEGARDEN」を「ELLE」と「GARDEN」の二段に分けて表記したロゴについて、不正競争防止法に違反するとして使用差止請求を認め、その余の請求を棄却した<span class="ni">&amp;lt;</span>ref name=&quot;HanreiTimes&quot; /<span class="ni">&amp;gt;</span>。
+* 2006年12月21日、福岡ドラムロゴスで[[対バン]]ツアーをしていた[[アリスター|ALLiSTER]]と一夜かぎりの合同バンド「DEATH BY FONDUE」を結成した。名前の由来はツアー中に[[チーズフォンデュ]]を食べた翌日にALLiSTERのドラマーが[[ノロウイルス]]に感染したことから来ている<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>DVD『ELEVEN FIRE CRACKERS TOUR 06-07 〜AFTER PARTY』のドキュメンタリー<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。
+*[[スペースシャワーTV]]内番組「爆音アトモス」で、細美が[[the pillows]]の[[山中さわお]]と対談した際、「今度対バンした時、これ着て（その時着用していた全身黒タイツ）アンコールで『Funny Bunny』をやろう」という約束をし、2007年10月22日、Zepp Nagoya公演にて実現。
+*アルバム『[[My Own Destruction]]』収録の「右手」は、[[矢野顕子]]によって各ライヴやアルバム『[[音楽堂 (アルバム)|音楽堂]]』などでカヴァーされている。
+
+== 経歴 ==
+[[1998年]]大晦日の0時にELLEGARDEN結成<span class="ni">&amp;lt;</span>ref name=&quot;oriconp&quot; /<span class="ni">&amp;gt;&amp;lt;</span>ref name=&quot;barksartist&quot;<span class="ni">&amp;gt;</span>{{cite web|url= https://www.barks.jp/artist/?id=1000000199 |title= ELLEGARDENの新着ニュース・新曲・ライブ・チケット情報 |date= |accessdate= 2018-07-16 |publisher= [[BARKS]] }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。
+
+2000年5月、自主制作[[ミニアルバム]]『[[Stupid]]』を発売。9月27日、ライブハウス、[[Shibuya eggman]]にてワンマンライブを開催<span class="ni">&amp;lt;</span>ref name=&quot;barksartist&quot;/<span class="ni">&amp;gt;</span>。
+
+2001年4月1日 - 5月13日、初のライブツアー「みんなでYou Bitch!!!」を開催。5月23日、1stミニアルバム『[[ELLEGARDEN (アルバム)|ELLEGARDEN]]』でインディーズ[[デビュー]]<span class="ni">&amp;lt;</span>ref name=&quot;oriconp&quot; /<span class="ni">&amp;gt;&amp;lt;</span>ref name=&quot;barksartist&quot;/<span class="ni">&amp;gt;</span>。10月12日、1st[[シングル]]「[[Bare Foot]]」を発売。
+
+2002年2月20日、2ndシングル「指輪」を発売。4月3日、1st[[スタジオ・アルバム]]『[[DON&#39;T TRUST ANYONE BUT US]]』を発売。10月16日、2ndミニアルバム『[[My Own Destruction]]』を発売。
+
+2003年7月2日、2ndスタジオ・アルバム『[[BRING YOUR BOARD!!]]』を発売。1stライブDVD『MY OWN DESTRUCTION TOUR BOOTLEG』を発売。11月12日、3rdシングル「[[ジターバグ (曲)|ジターバグ]]」を発売。
+
+2004年5月26日、3rdスタジオ・アルバム『[[Pepperoni Quattro]]』を発売。2ndライブDVD『BRING YOUR BOARD!! TOUR BOOTLEG Ⅱ』を発売。11月3日、4thシングル「[[Missing (ELLEGARDENの曲)|Missing]]」を発売。
+
+2005年2月26日、[[さいたまスーパーアリーナ]]にて、[[カナダ]]のロックバンド[[SUM 41]]主催のライブツアー「SUM 41 Japan Tour 2005」にオープニングアクトとして出演<span class="ni">&amp;lt;</span>ref name=&quot;barksartist&quot;/<span class="ni">&amp;gt;</span>。4月20日、4thスタジオ・アルバム『[[RIOT ON THE GRILL]]』を発売。3rdライブDVD『Bad For Education TOUR LAST BOOTLEG』を発売。11月、5thアルバム『ELEVEN FIRE CRACKERS』をリリース。オリコンのアルバム・ウィークリーランキングで初の首位を獲得<span class="ni">&amp;lt;</span>ref name=&quot;barksartist&quot;/<span class="ni">&amp;gt;</span>。12月7日、5thシングル「[[Space Sonic]]」を発売。
+
+2006年4月15日、[[アメリカ合衆国]]にて『[[RIOT ON THE GRILL]]』のアメリカ盤を発売<span class="ni">&amp;lt;</span>ref name=&quot;jpnnite&quot; /<span class="ni">&amp;gt;</span>。3月18日、アメリカ合衆国の[[テキサス州]][[オースティン (テキサス州)|オースティン]]のAustin Convention Centerにて、ロックフェス「SXSW 2006 Music Festival」に出演<span class="ni">&amp;lt;</span>ref name=&quot;jpnnite&quot; /<span class="ni">&amp;gt;</span>。3月20日 - 3月27日、アメリカ合衆国の[[ニューヨーク]]、[[ボストン]]、[[フィラデルフィア]]、[[シカゴ]]、[[デンバー]]、[[シアトル]]、[[ポートランド (オレゴン州)|ポートランド]]を回るライブツアー「ジャパン・ナイト USツアー2006」に出演<span class="ni">&amp;lt;</span>ref name=&quot;jpnnite&quot;<span class="ni">&amp;gt;</span>{{Cite web |url=http://tower.jp/article/news/2006/02/03/100006616 |title=ELLEGARDEN､『RIOT ON THE GRILL』US盤の発売と全米ツアーが決定 |publisher=タワーレコード |accessdate=2018-05-23}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。8月9日、6thシングル「[[Salamander]]」と4thライブDVD『Doggy Bags』を発売。10月12日から約半年をかけて全国ライブツアー「ELLEGARDEN ELEVEN FIRE CRACKERS TOUR 06-07」を開催。最終日である3月24日は[[千葉県]]の国際展示場[[幕張メッセ|MAKUHARI MESSE <span class="ni">&amp;lt;</span>展示場ホール9,10,11<span class="ni">&amp;gt;</span>]]にて行われ、ツアー全体で3万人を動員した<span class="ni">&amp;lt;</span>ref name=&quot;taiban1&quot;<span class="ni">&amp;gt;</span>{{Cite web |url=https://natalie.mu/music/news/1021 |title=[ELLEGARDEN] Birthday×エルレが大阪で対バン |publisher=音楽ナタリー |accessdate=2018-05-23}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。11月8日、5thスタジオ・アルバム『[[ELEVEN FIRE CRACKERS]]』を発売し、発売初週で21.6万枚を売り上げ、[[オリコン]]のアルバムウィークリーランキングで初の首位を獲得した<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{Cite web |url=https://www.oricon.co.jp/news/38951/full/ |title=ELLEGARDEN、初の1位!20万枚突破の大ヒットに! |publisher=oricon |accessdate=2018-05-23}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。
+
+2007年6月1日、ZeppOsakaにてThe Birthdayと対バンイベントである「SPRING un/desca? ver.69」を開催<span class="ni">&amp;lt;</span>ref name=&quot;taiban1&quot; /<span class="ni">&amp;gt;</span>。10月24日、5thライブDVD『ELEVEN FIRE CRACKERS TOUR 06-07 〜AFTER PARTY』を発売。
+
+2008年5月2日、オフィシャルサイトにて活動休止を発表<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{Cite web |url=https://rockinon.com/news/detail/2847 |title=ELLEGARDEN　活動休止を発表！ |publisher= rockin’on |accessdate=2018-05-23}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。7月2日、初の[[ベスト・アルバム]]『[[ELLEGARDEN BEST 1999-2008]]』を発売。9月7日、[[STUDIO COAST]]でのライブをもって活動を休止し、その様子を収めた6thライブDVD『[[2008.09.07. STUDIO COAST]]』が2009年4月8日にリリースされた<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{Cite web |url=https://rockinon.com/news/detail/17807 |title=ELLEGARDEN　休止前最後のライブ模様を収めたDVDのリリースが決定！ |publisher=rockin’on |accessdate=2018-05-23}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。
+
+[[2018年]][[5月10日]]、10年振りの復活をオフィシャルサイトにて発表。それに伴いライブツアー『THE BOYS ARE BACK IN TOWN TOUR 2018』を開催<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{cite web|url=https://gekirock.com/news/2018/05/ellegarden_the_boys_are_back_in_town_tour_2018.php|title=ELLEGARDEN、8月に10年ぶりとなるライヴ・ツアー&quot;THE BOYS ARE BACK IN TOWN TOUR 2018&quot;開催決定！|date=2018-05-10|accessdate=2018-05-10|publisher=激ロック|}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。
+
+== 使用機材 ==
+{{出典の明記|date=2018年5月|section=1}}
+{{col-begin}}
+{{col-2}}
+;  細美武士
+* [[エレキギター]]
+** [[ギブソン・レスポール|Gibson Les Paul]] &#39;57 Historic
+** Gibson Les Paul &#39;58 Historic
+** Gibson Les Paul Standard Chery Burst
+** [[エピフォン|Epiphone]] Les Paul Classic Frame Top
+** [[フェンダー・ストラトキャスター|Fender Stratocaster]] Custom Shop MBS 50 ST/WBL
+* [[アコースティックギター]]
+** [[マーティン (楽器メーカー)|Martin]] D-28 Marquis
+* [[アンプ]]
+** Diezel Herbert 
+** [[マーシャル (アンプ)|Marshall]] 1960A
+; 生形真一
+* エレキギター
+** Gibson ES-355 Custom Shop with Bigsby
+** [[ギブソン・ES-335|Gibson ES-335]] Dot Export Proto
+** Gibson ES-335 Diamond F-Hole
+** Epiphone Riviera
+* アンプ
+** [[バッドキャット|Bad Cat]] LYNX
+; 高田雄一
+* [[エレキベース]]
+** [[フェンダー・プレシジョンベース|Fender Precision Bass]]
+** G<span class="ni">&amp;amp;</span>L L-2000
+*アンプ
+** [[アンペグ|Ampeg]] SVT-VR
+** Ampeg SVT-810E
+{{col-2}}
+; 高橋宏貴
+* [[ドラムセット]]
+**[[ラディック・ムッサー|Ludwig-Musser]] Classic Maple 22&quot;,13&quot;,16&quot;
+* [[スネアドラム]]
+** [[グレッチ|Gretsch]] G4160
+** [[ラディック・ムッサー|Ludwig-Musser]] ブラックビューティー
+* [[シンバル]]
+** [[パイステ|PAiSTE]] 2002 Crush19&quot;,20&quot;,Formula 602 HEAVY Ride 22&quot;/2002 HEAVY Ride 22&quot; 
+* [[ハイハット]]
+** [[ジルジャン|Zildjian]] New Beat 14&quot; Bottom<span class="ni">&amp;amp;</span>top
+** [[パイステ|PAiSTE]] 2002 HEAVY Hi-Hat
+* [[ドラムスティック]]
+** [[パール (楽器メーカー)|Pearl]] Standard Hickory 190STH/Hard Wear
+** pro-mark シグネチャーモデル (非売品)
+* ドラムスローン
+** [[星野楽器|TAMA]]
+{{col-end}}
+
+== 作品 ==
+{{出典の明記|date=2018年5月|section=1}}
+=== マキシシングル ===
+{|class=&quot;wikitable&quot; style=&quot;font-size: small;&quot;
+|-
+!<span class="ni">&amp;amp;</span>nbsp;
+!発売日
+!タイトル
+!規格
+![[規格品番]]
+!最高位
+|-
+|1st
+|2001年10月12日<span class="ni">&amp;lt;</span>br<span class="ni">&amp;gt;</span>2004年8月25日(再発売)
+! [[Bare Foot]]
+|12cm[[コンパクトディスク|CD]]
+|DLCI-1004<span class="ni">&amp;lt;</span>br<span class="ni">&amp;gt;</span>ZEDY-1004
+|159位
+|-
+|2nd
+|2002年2月20日
+! 指輪
+|12cmCD
+|DYCL-1002
+|
+|-
+|3rd
+|2003年11月12日
+! [[ジターバグ (曲)|ジターバグ]]
+|12cmCD
+|ZEDY-1006
+|75位
+|-
+|4th
+|2004年11月3日
+! [[Missing (ELLEGARDENの曲)|Missing]]
+|12cmCD
+|ZEDY-1009
+|16位
+|-
+|5th
+|2005年12月7日
+! [[Space Sonic]]
+|12cmCD
+|GUDY-1001
+|5位
+|-
+|6th
+|2006年8月9日
+! [[Salamander]]
+|12cmCD
+|ZEDY-1010
+|3位
+|}
+
+=== 自主制作盤 ===
+{|class=&quot;wikitable&quot; style=&quot;font-size: small;&quot;
+|-
+!発売日
+!タイトル
+!規格
+![[規格品番]]
+|-
+|2000年5月
+! Stupid
+|12cmCD
+|YHUT-3601
+|}
+
+=== ミニアルバム ===
+{|class=&quot;wikitable&quot; style=&quot;font-size: small;&quot;
+|-
+!<span class="ni">&amp;amp;</span>nbsp;
+!発売日
+!タイトル
+!規格
+![[規格品番]]
+!最高位
+|-
+|1st
+|2001年5月23日
+! [[ELLEGARDEN (アルバム)|ELLEGARDEN]]
+|12cmCD
+|DYCL-2001
+|240位
+|-
+|2nd
+|2002年10月6日
+! [[My Own Destruction]]
+|12cmCD
+|DYCL-2004
+|206位
+|}
+
+=== スタジオ・アルバム ===
+{|class=&quot;wikitable&quot; style=&quot;font-size: small;&quot;
+|-
+!<span class="ni">&amp;amp;</span>nbsp;
+!発売日
+!タイトル
+!規格
+![[規格品番]]
+!最高位
+|-
+|1st
+|2002年4月3日
+! [[DON&#39;T TRUST ANYONE BUT US]]
+|12cmCD
+|DYCL-2002
+|94位
+|-
+|2nd
+|2003年7月2日
+! [[BRING YOUR BOARD<span class="ni">&amp;amp;</span>#x21;<span class="ni">&amp;amp;</span>#x21;]]
+|12cmCD
+|ZEDY-2006
+|74位
+|-
+|3rd
+|2004年5月26日
+! [[Pepperoni Quattro]]
+|12cmCD
+|ZEDY-2009
+|17位
+|-
+|4th
+|2005年4月20日
+! [[RIOT ON THE GRILL]]
+|12cmCD
+|ZEDY-2012
+|3位
+|-
+|5th
+|2006年11月8日
+! [[ELEVEN FIRE CRACKERS]]
+|12cmCD
+|ZEDY-2017
+|1位
+|}
+
+=== ベスト・アルバム ===
+{|class=&quot;wikitable&quot; style=&quot;font-size: small;&quot;
+|-
+!<span class="ni">&amp;amp;</span>nbsp;
+!発売日
+!タイトル
+!規格
+![[規格品番]]
+!最高位
+|-
+|1st
+|2008年7月2日
+! [[ELLEGARDEN BEST 1999-2008]]
+|12cmCD
+|ZEDY-2021
+|2位
+|}
+
+=== 映像作品 ===
+==== ライブDVD ====
+{|class=&quot;wikitable&quot; style=&quot;font-size: small;&quot;
+|-
+!<span class="ni">&amp;amp;</span>nbsp;
+!発売日
+!タイトル
+!規格
+![[規格品番]]
+|-
+|1st
+|2003年7月2日
+! MY OWN DESTRUCTION TOUR BOOTLEG
+|12cm[[DVD]]
+|ZEDY-3002
+|-
+|2nd
+|2004年5月26日
+! BRING YOUR BOARD<span class="ni">&amp;amp;</span>#x21;<span class="ni">&amp;amp;</span>#x21; TOUR -BOOTLEG II-
+|12cmDVD
+|ZEDY-3003
+|-
+|3rd
+|2005年4月20日
+! Bad For Education TOUR LAST BOOTLEG
+|12cmDVD
+|ZEDY-3004
+|-
+|4th
+|2006年8月9日
+! Doggy Bags
+|12cmDVD
+|ZEDY-3005/ZEDY-3006
+|-
+|5th
+|2007年10月24日
+! [[ELEVEN FIRE CRACKERS TOUR 06-07 〜AFTER PARTY]]
+|12cmDVD
+|ZEDY-3007
+|-
+|6th
+|2009年4月8日
+! [[2008.09.07. STUDIO COAST]]
+|12cmDVD
+|ZEDY-3008
+|}
+
+==== その他 ====
+{|class=&quot;wikitable&quot; style=font-size:small
+|-
+!発売日
+!タイトル
+!規格品番
+!収録曲
+! 備考
+|-
+|2002年05月08日
+| &#39;&#39;&#39;ぽんず vol.2&#39;&#39;&#39;
+|WQ-9002
+|「THE END OF THE WORLD」
+|
+|-
+|2002年11月20日
+| &#39;&#39;&#39;[[I&#39;ll/CKBC]] Image Album Sentimental Lilac&#39;&#39;&#39;
+|SVWC-7140
+|「風の日」「ナイフ」
+|
+|-
+|2003年03月26日
+| &#39;&#39;&#39;I&#39;ll/CKBC ORIGINAL SOUNDTRACK&#39;&#39;&#39;
+|SVWC-7141
+|「右手」「風の日」
+|
+|-
+|2003年03月15日
+| &#39;&#39;&#39;THE 青春PUNK/ROCK&#39;&#39;&#39;
+|STCR-22
+|「Mouse Molding」
+|
+|-
+|2003年03月26日
+| &#39;&#39;&#39;[[BPR5000]] 〜BURST TRACKS〜&#39;&#39;&#39;
+|RRCA-29013
+|「(Can&#39;t Remember) How we used to be」
+|
+|-
+|2003年09月17日
+| &#39;&#39;&#39;BEST OF 蓮沼 1999→2003&#39;&#39;&#39;
+|DIGA-001
+|「No.13」
+|
+|-
+|2003年11月19日
+| &#39;&#39;&#39;PUNK ROCK CAMP!!EX&#39;&#39;&#39;
+|RUCI-2007
+|「No.13」「Mouse Molding」
+|
+|-
+|2004年06月30日
+| &#39;&#39;&#39;E.V. Junkie 2〜GuitarRocking〜&#39;&#39;&#39;
+|SRCL-5717<span class="ni">&amp;lt;</span>br<span class="ni">&amp;gt;</span>SRCL-5719
+|「ジターバグ」
+|
+|-
+|2004年7月22日
+| &#39;&#39;&#39;STREET ROCK FILE THE BEST 2&#39;&#39;&#39;
+|MECR-2010
+|「Surfrider Association」
+|
+|-
+|2004年09月16日
+| &#39;&#39;&#39;[[SYNCHRONIZED ROCKERS|シンクロナイズド・ロッカーズ]]&#39;&#39;&#39;
+|KICS-1103
+|「Funny Bunny」（[[the pillows]]の同名曲のカバー）
+|
+|-
+|2005年01月26日
+| &#39;&#39;&#39;WHITE OUT 〜real snowboarder&#39;s compilation〜&#39;&#39;&#39;
+|FLCF-4047
+|「Supernova」
+|
+|-
+|2005年06月08日
+| &#39;&#39;&#39;[[ASIAN KUNG-FU GENERATION presents NANO-MUGEN COMPILATION]]&#39;&#39;&#39;
+|KSCL-827
+|「Bored Of Everything」
+|
+|-
+|2006年01月18日
+| &#39;&#39;&#39;WHITE OUT 2 〜real snowboarder&#39;s compilation〜&#39;&#39;&#39;
+|FLCF-4089
+|「BBQ Riot Song」
+|
+|-
+|2006年07月05日
+| &#39;&#39;&#39;[[ASIAN KUNG-FU GENERATION presents NANO-MUGEN COMPILATION 2006]]&#39;&#39;&#39;
+|KSCL-998
+|「Stereoman」
+|
+|-
+|2006年12月06日
+| &#39;&#39;&#39;WHITE OUT 3 〜real snowboarder&#39;s compilation〜&#39;&#39;&#39;
+|FLCF-4166
+|「モンスター」
+|
+|-
+|2007年7月
+| &#39;&#39;&#39;Figureheads Compilation&#39;&#39;&#39;
+|
+| <span class="ni">&amp;lt;</span>div class=&quot;NavFrame&quot; style=&quot;clear:both;border:0;&quot;<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavHead&quot; style=&quot;text-align:center;&quot;<span class="ni">&amp;gt;</span> 詳細 <span class="ni">&amp;lt;</span>/div<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavContent&quot; style=&quot;text-align:left;&quot;<span class="ni">&amp;gt;</span>
+新録は国内のiTunes Storeにおいても配信中
+# The Autumn Song
+# Red Hot (イントロのSEが削除)
+# Stereoman (新録)
+# Raindrops (新録)
+# Supernova (イントロのSEが削除、ボーカルが再録されておりサビの歌詞が一部変更されている。)
+# Marry Me
+# Missing
+# Windy Day (新録。英語表記であるが「風の日」である。)
+# Middle of Nowhere (新録)
+# I Hate It
+<span class="ni">&amp;lt;</span>/div<span class="ni">&amp;gt;&amp;lt;</span>/div<span class="ni">&amp;gt;</span>
+|iTunes Store配信限定のコンピレーションアルバム。
+|-
+|2008年07月09日
+| &#39;&#39;&#39;[[ASIAN KUNG-FU GENERATION presents NANO-MUGEN COMPILATION 2008]]&#39;&#39;&#39;
+|KSCL-1256
+|「Mr.Feather」
+|
+|-
+|}
+
+== ミュージックビデオ ==
+{|class=wikitable border=&quot;1&quot; cellpadding=&quot;3&quot; style=&quot;font-size:smaller;&quot;
+|-
+|&#39;&#39;&#39;監督&#39;&#39;&#39;
+|&#39;&#39;&#39;曲名&#39;&#39;&#39;
+|-
+|中崎一嘉
+|「Missing」「ジターバグ」
+|-
+|深津昌和
+|「Fire Cracker」「Red Hot」「Salamander」「Space Sonic」「高架線」
+|-
+|}
+
+== 出演 ==
+{{出典の明記|date=2018年5月|section=1}}
+=== ラジオ ===
+* [[RIOT ON THE RADIO]]（[[ベイエフエム|bayfm]]）毎週水曜24:30-24:52（ほぼ生放送）（2008年9月3日をもって終了）
+* [[Hedgehog Diaries]]（[[ベイエフエム|bayfm]]）毎週水曜25:00-（2009年1月7日開始）細美の単独番組
+* DELICIOUS FRIDAY（[[FM802]]）毎週金曜15:00- ＜細美のみ＞
+: 事実上の準レギュラー。月1回程度、不定期に18時台「DELICIOUS DIARY」のコーナーに出演。
+
+== イベント ==
+{{出典の明記|date=2018年5月|section=1}}
+=== ワンマンライブ・主催イベント ===
+{| class=&quot;wikitable&quot; style=&quot;font-size:small&quot;
+|-
+! style=&quot;width:15％&quot;|開催年
+! style=&quot;width:35%&quot;|タイトル
+! style=&quot;width:50%&quot;|備考
+|-
+| 2002年
+! Don&#39;t Trust Anyone But Us tour
+|
+|-
+| 2002年
+! My Own Destruction tour
+|
+|-
+| 2004年
+! ジターバグ発売特典 無料ライブ
+|
+|-
+| 2004年
+! Pepperoni Quattro tour
+|
+|-
+| 2005年
+! ELLEGARDEN RIOT ON THE GRILL TOUR ワンマンツアー
+|
+|-
+| 2005年
+! RIOT ON THE GRILL TOUR
+|w/[[smorgas]]/[[ストレイテナー]]/[[SNAIL RAMP]]/[[STOMPIN&#39;BIRD]]/[[ピンクリボン軍]]/[[GOOD4NOTHING]]
+|-
+|2005年 - 2006年
+! SPACE SONIC TOUR 2005-2006
+|w/[[TOTALFAT]]/Low relief/[[STANCE PUNKS]]/[[OCEANLANE]]/CARAVAN SARY/[[ACIDMAN]]/[[ASIAN KUNG-FU GENERATION]]/[[B-DASH]]/GOLDEN GOOSE/[[MONGOL800]]/SLIME BALL/[[STOMPIN&#39;BIRD]]/Parking Out/[[RIDDLE]]/[[マキシマム ザ ホルモン]]/KILLING SKILL 48/[[10-FEET]]
+|-
+| 2006年 - 2007年
+! ELEVEN FIRE CRACKERS TOUR 06-07
+|
+|-
+| 2007年
+! ELEVEN FIRE CRACKERS TOUR 06-07 -United Solitude-
+|w/[[ASIAN KUNG-FU GENERATION]]/[[B-DASH]]/[[チャットモンチー]]/[[アリスター]]
+|-
+| 2007年
+! ELLEGARDEN TOUR 2007
+|w/[[amplified]]/[[SNAIL RAMP]]/U.K.L/[[RAZORS EDGE]]/[[the pillows]]/[[THE BACK HORN]]/[[POLYSICS]]/[[dustbox]]/[[TOTALFAT]]/[[STANCE PUNKS]]/[[Pay money To my Pain]]/[[GOOD4NOTHING]]/[[PE&#39;Z]]/[[MONGOL800]]/[[9mm Parabellum Bullet]]/[[マキシマム ザ ホルモン]]/[[B-DASH]]
+|-
+|2007年
+! ELLEGARDEN Electric Lady Land 30th Anniversary Special
+|
+|-
+|2007年
+! ELLEGARDEN UxKxL presents Welcome To Hell
+|
+|-
+|2008年
+! ELLEGARDEN VINTAGE×DI:GA 2008
+|
+|-
+|2018年
+! THE BOYS ARE BACK IN TOWN TOUR 2018
+|w/[[ONE OK ROCK]]
+|}
+
+=== 出演イベント ===
+{{Colbegin|2}}
+<span class="ni">&amp;lt;</span>div class=&quot;NavFrame&quot; style=&quot;clear:;&quot;<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavHead&quot; style=&quot;text-align: left;&quot;<span class="ni">&amp;gt;</span>[[2002年]]<span class="ni">&amp;lt;</span>/div<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavContent&quot; style=&quot;text-align: left;&quot;<span class="ni">&amp;gt;</span>
+* 8月17日 - [[RISING SUN ROCK FESTIVAL]] 2002 in EZO
+<span class="ni">&amp;lt;</span>/div<span class="ni">&amp;gt;&amp;lt;</span>/div<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavFrame&quot; style=&quot;clear:;&quot;<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavHead&quot; style=&quot;text-align: left;&quot;<span class="ni">&amp;gt;</span>[[2003年]]<span class="ni">&amp;lt;</span>/div<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavContent&quot; style=&quot;text-align: left;&quot;<span class="ni">&amp;gt;</span>
+* 8月20日 - [[FM802]]×トーキンロック×ぴあ×Lマガジン 「LIFE SIZE ROCK 03」
+<span class="ni">&amp;lt;</span>/div<span class="ni">&amp;gt;&amp;lt;</span>/div<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavFrame&quot; style=&quot;clear:;&quot;<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavHead&quot; style=&quot;text-align: left;&quot;<span class="ni">&amp;gt;</span>[[2004年]]<span class="ni">&amp;lt;</span>/div<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavContent&quot; style=&quot;text-align: left;&quot;<span class="ni">&amp;gt;</span>
+* 8月7日 - [[ROCK IN JAPAN FESTIVAL]] 2004
+* 8月22日 - [[MONSTER baSH]] 2004
+* 10月9日 - GOING TO ARABAKI ROCK FEST.2005 荒吐宵祭
+* 12月29日 - [[COUNTDOWN JAPAN]] 04/05
+<span class="ni">&amp;lt;</span>/div<span class="ni">&amp;gt;&amp;lt;</span>/div<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavFrame&quot; style=&quot;clear:;&quot;<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavHead&quot; style=&quot;text-align: left;&quot;<span class="ni">&amp;gt;</span>[[2005年]]<span class="ni">&amp;lt;</span>/div<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavContent&quot; style=&quot;text-align: left;&quot;<span class="ni">&amp;gt;</span>
+* 4月29日 - [[ARABAKI ROCK FEST.]]04292005
+* 7月9日 - [[ASIAN KUNG-FU GENERATION presents NANO-MUGEN FES.]]2005
+* 8月7日 - ROCK IN JAPAN FESTIVAL 2005
+* 8月13日・14日 - [[SUMMER SONIC]] 2005
+* 8月20日 - RISING SUN ROCK FESTIVAL 2005 in EZO
+* 8月27日 - MONSTER baSH 2005
+* 8月30日 - TREASURE052 2005 〜the greatest riot 2nd day〜
+* 12月29日 - COUNTDOWN JAPAN 05/06
+<span class="ni">&amp;lt;</span>/div<span class="ni">&amp;gt;&amp;lt;</span>/div<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavFrame&quot; style=&quot;clear:;&quot;<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavHead&quot; style=&quot;text-align: left;&quot;<span class="ni">&amp;gt;</span>[[2006年]]<span class="ni">&amp;lt;</span>/div<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavContent&quot; style=&quot;text-align: left;&quot;<span class="ni">&amp;gt;</span>
+* 4月1日・2日 - [[PUNKSPRING]] 2006
+* 4月30日 - ARABAKI ROCK FEST.06
+* 6月24日 - MIYAKO ISLAND ROCKFESTIVAL 2006
+* 7月16日 - ASIAN KUNG-FU GENERATION presents NANO-MUGEN FES.2006
+* 7月23日 - [[SETSTOCK]]&#39;06
+* 8月5日 - ROCK IN JAPAN FESTIVAL 2006
+* 8月12日・13日 - SUMMER SONIC 2006
+* 8月26日 - MONSTER baSH 2006
+* 8月27日 - [[Sky Jamboree]] 2006 〜夢模様〜
+* 9月2日 - TREASURE052 2006
+* 10月06日 - [[STOMPIN&#39;BIRD]] presents HIGH JACK
+* 12月29日 - COUNTDOWN JAPAN 06/07 -WEST-
+* 12月30日 - COUNTDOWN JAPAN 06/07
+<span class="ni">&amp;lt;</span>/div<span class="ni">&amp;gt;&amp;lt;</span>/div<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavFrame&quot; style=&quot;clear:;&quot;<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavHead&quot; style=&quot;text-align: left;&quot;<span class="ni">&amp;gt;</span>[[2007年]]<span class="ni">&amp;lt;</span>/div<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavContent&quot; style=&quot;text-align: left;&quot;<span class="ni">&amp;gt;</span>
+* 3月31日・04月01日 - PUNKSPRING 2007
+* 4月28日 - ARABAKI ROCK FEST.07
+* 6月23日 - MIYAKO ISLAND ROCKFESTIVAL 2007
+* 7月22日 - SETSTOCK&#39;07
+* 8月3日 - ROCK IN JAPAN FESTIVAL 2007
+* 8月11日・12日 - SUMMER SONIC 2007
+* 8月17日 - RISING SUN ROCK FESTIVAL 2007 in EZO
+* 8月25日 - MONSTER baSH 2007
+* 8月26日 - Sky Jamboree 2007 〜遊び心〜
+* 9月1日 - SKULLSHIT presents SKULLMANIA
+* 12月29日 - COUNTDOWN JAPAN 07/08
+* 12月30日 - COUNTDOWN JAPAN 07/08 -WEST-
+<span class="ni">&amp;lt;</span>/div<span class="ni">&amp;gt;&amp;lt;</span>/div<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavFrame&quot; style=&quot;clear:;&quot;<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavHead&quot; style=&quot;text-align: left;&quot;<span class="ni">&amp;gt;</span>[[2008年]]<span class="ni">&amp;lt;</span>/div<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavContent&quot; style=&quot;text-align: left;&quot;<span class="ni">&amp;gt;</span>
+* 4月27日 - ARABAKI ROCK FEST.08
+* 5月10日 - BEA presents F-X 2008
+* 5月16日 - DEVILOCK5
+* 6月21日 - MIYAKO ISLAND ROCKFESTIVAL 2008
+* 6月28日 - [[湘南音祭]] Vol.2
+* 7月12日 - [[京都大作戦]]2008〜去年は台風でごめんな祭〜
+* 7月21日 - ASIAN KUNG-FU GENERATION presents NANO-MUGEN FES.2008
+* 7月22日 - [[くるり]] 対バンツアー2008 デラぜっぴん 〜混浴四重奏〜
+* 7月27日 - FUJI ROCK FESTIVAL &#39;08
+* 8月3日 - ROCK IN JAPAN FESTIVAL 2008
+* 8月23日 - MONSTER baSH 2008
+* 8月24日 - Sky Jamboree 2008 〜笑顔〜
+* 8月31日 - TREASURE05X 2008 〜the greatest riot returns〜
+<span class="ni">&amp;lt;</span>/div<span class="ni">&amp;gt;&amp;lt;</span>/div<span class="ni">&amp;gt;</span>
+{{Colend|2}}
+
+== 脚注 ==
+=== 注釈 ===
+{{Reflist|group=&quot;注&quot;}}
+=== 出典 ===
+{{Reflist|2}}
+
+== 外部リンク ==
+
+* [http://www.ellegarden.jp/i/ ELLEGARDEN 公式モバイルサイト]
+* [http://www.takeshihosomi.com/index.html 細美武士 公式サイト]
+* [https://www.ncis.jp/ 生形真一 公式サイト]
+* [https://lineblog.me/takadametal/ 高田雄一 公式ブログ]
+* [https://lineblog.me/takahashihirotaka/ 高橋宏貴 公式ブログ]
+*[[Myspace]]
+**{{MySpace|hosomitakeshi|細美武士}}
+**{{MySpace|hirotakatakahashi|高橋宏貴}}
+
+{{ELLEGARDEN}}
+{{Normdaten}}
+{{リダイレクトの所属カテゴリ
+|redirect1= 高田雄一
+|1-1= 日本のベーシスト
+|1-2= 1976年生
+|1-3= 存命人物
+|redirect2= 高橋宏貴
+|2-1= 日本のドラマー
+|2-2= 1974年生
+|2-3= 存命人物}}
+
+{{DEFAULTSORT:えれかあてん}}
+[[Category:日本のパンク・ロック・バンド]]
+[[Category:日本のオルタナティヴ・ロック・バンド]]
+[[Category:エモ・バンド]]
+[[Category:ポップ・パンク・バンド]]
+[[Category:フジロック・フェスティバル出演者]]
+[[Category:ROCK IN JAPAN FESTIVAL出場者]]
+[[Category:サマーソニック出演者]]
+[[Category:1998年に結成したバンド]]
+[[Category:2018年に再結成したバンド]]<span class="nt">&lt;/rev&gt;</span>
+        <span class="nt">&lt;/revisions&gt;</span>
+      <span class="nt">&lt;/page&gt;</span>
+    <span class="nt">&lt;/pages&gt;</span>
+  <span class="nt">&lt;/query&gt;</span>
+<span class="nt">&lt;/api&gt;</span>
+</pre></div>
+</div><noscript><img src="//ja.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div><div class="printfooter">
+「<a dir="ltr" href="https://ja.wikipedia.org/wiki/特別:ApiHelp">https://ja.wikipedia.org/wiki/特別:ApiHelp</a>」から取得</div>
+			</div>
+		</div>
+
+		
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":332,"wgHostname":"mw1342"});});</script>		</body></html>

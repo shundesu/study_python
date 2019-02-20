@@ -1,0 +1,2 @@
+# akao
+Django tutorial

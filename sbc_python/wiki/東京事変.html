@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="ja" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>MediaWiki API の結果 - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"Special","wgCanonicalSpecialPageName":"ApiHelp","wgNamespaceNumber":-1,"wgPageName":"特別:ApiHelp","wgTitle":"ApiHelp","wgCurRevisionId":0,"wgRevisionId":0,"wgArticleId":0,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"ja","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"ja","wgMonthNames":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgMonthNamesShort":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgRelevantPageName":"特別:ApiHelp","wgRelevantArticleId":0,"wgRequestId":"XD6lwApAMEYAAKExbo0AAADX","wgCSPNonce":false,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikiEditorEnabledModules":[],"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsShouldSendModuleToUser":true,"wgPopupsConflictsWithNavPopupGadget":false,"wgVisualEditor":{"pageLanguageCode":"ja","pageLanguageDir":"ltr","pageVariantFallbacks":"ja","usePageImages":true,"usePageDescriptions":true},"wgMFExpandAllSectionsUserOption":true,"wgMFEnableFontChanger":true,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgWMESchemaEditAttemptStepOversample":false,"wgULSCurrentAutonym":"日本語","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgScoreNoteLanguages":{"arabic":"العربية","catalan":"català","deutsch":"Deutsch","english":"English","espanol":"español","italiano":"italiano","nederlands":"Nederlands","norsk":"norsk","portugues":"português","suomi":"suomi","svenska":"svenska","vlaams":"West-Vlams"},"wgScoreDefaultNoteLanguage":"nederlands","wgCentralAuthMobileDomain":false,"wgCodeMirrorEnabled":true,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":true});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.apipretty":"ready","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.skinning.interface":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready"});mw.loader.implement("user.options@1smlfrf",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"ja"});
+});mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});RLPAGEMODULES=["site","mediawiki.page.startup","mediawiki.page.ready","ext.gadget.ReferenceTooltips","ext.gadget.suppressEnterAtSummaryBox","ext.gadget.checkSignature","ext.gadget.WikiMiniAtlas","ext.gadget.switcher","ext.centralauth.centralautologin","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.compactlinks","ext.uls.interface","ext.centralNotice.geoIP"];mw.loader.load(RLPAGEMODULES);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=ja&amp;modules=ext.3d.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.apipretty%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface&amp;only=styles&amp;skin=apioutput"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=ja&amp;modules=startup&amp;only=scripts&amp;skin=apioutput"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=ja&amp;modules=site.styles&amp;only=styles&amp;skin=apioutput"/>
+<meta name="generator" content="MediaWiki 1.33.0-wmf.12"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (ja)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//ja.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="WikipediaのAtomフィード" href="/w/index.php?title=%E7%89%B9%E5%88%A5:%E6%9C%80%E8%BF%91%E3%81%AE%E6%9B%B4%E6%96%B0&amp;feed=atom"/>
+<link rel="canonical" href="https://ja.wikipedia.org/wiki/%E7%89%B9%E5%88%A5:ApiHelp"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=ja&amp;modules=html5shiv&amp;only=scripts&amp;skin=vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns--1 ns-special mw-special-ApiHelp page-特別_ApiHelp rootpage-特別_ApiHelp skin-apioutput action-view">
+		<div class="mw-body" role="main">
+			<h1 class="firstHeading">MediaWiki API の結果</h1>
+			<div class="mw-body-content">
+				<div id="mw-content-text"><div class="api-pretty-header"><p>This is the HTML representation of the XML format. HTML is good for debugging, but is unsuitable for application use.
+</p><p>Specify the <var>format</var> parameter to change the output format. To see the non-HTML representation of the XML format, set <a class="external text" href="https://ja.wikipedia.org/w/api.php?format=xml&amp;action=query&amp;prop=revisions&amp;rvprop=content&amp;titles=%E6%9D%B1%E4%BA%AC%E4%BA%8B%E5%A4%89"><kbd>format=xml</kbd></a>.
+</p><p>See the <a href="https://www.mediawiki.org/wiki/API" class="extiw" title="mw:API">complete documentation</a>, or the <a href="/wiki/%E7%89%B9%E5%88%A5:ApiHelp/main" title="特別:ApiHelp/main">API help</a> for more information.
+</p></div><div dir="ltr"><div class="mw-highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot;?&gt;</span>
+<span class="nt">&lt;api</span> <span class="na">batchcomplete=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;warnings&gt;</span>
+    <span class="nt">&lt;main</span> <span class="na">xml:space=</span><span class="s">&quot;preserve&quot;</span><span class="nt">&gt;</span>Subscribe to the mediawiki-api-announce mailing list at <span class="ni">&amp;lt;</span>https://lists.wikimedia.org/mailman/listinfo/mediawiki-api-announce<span class="ni">&amp;gt;</span> for notice of API deprecations and breaking changes. Use [[Special:ApiFeatureUsage]] to see usage of deprecated features by your application.<span class="nt">&lt;/main&gt;</span>
+    <span class="nt">&lt;revisions</span> <span class="na">xml:space=</span><span class="s">&quot;preserve&quot;</span><span class="nt">&gt;</span>Because &quot;rvslots&quot; was not specified, a legacy format has been used for the output. This format is deprecated, and in the future the new format will always be used.<span class="nt">&lt;/revisions&gt;</span>
+  <span class="nt">&lt;/warnings&gt;</span>
+  <span class="nt">&lt;query&gt;</span>
+    <span class="nt">&lt;pages&gt;</span>
+      <span class="nt">&lt;page</span> <span class="na">_idx=</span><span class="s">&quot;137591&quot;</span> <span class="na">pageid=</span><span class="s">&quot;137591&quot;</span> <span class="na">ns=</span><span class="s">&quot;0&quot;</span> <span class="na">title=</span><span class="s">&quot;東京事変&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;revisions&gt;</span>
+          <span class="nt">&lt;rev</span> <span class="na">contentformat=</span><span class="s">&quot;text/x-wiki&quot;</span> <span class="na">contentmodel=</span><span class="s">&quot;wikitext&quot;</span> <span class="na">xml:space=</span><span class="s">&quot;preserve&quot;</span><span class="nt">&gt;</span>{{Infobox Musician <span class="ni">&amp;lt;</span>!-- プロジェクト:音楽家を参照 --<span class="ni">&amp;gt;</span>
+|名前= 東京事変<span class="ni">&amp;lt;</span>br /<span class="ni">&amp;gt;</span>Tokyo Incidents
+|画像= 
+|画像説明= 
+|画像サイズ= <span class="ni">&amp;lt;</span>!-- サイズが幅250ピクセルに満たない場合のみ記入 --<span class="ni">&amp;gt;</span>
+|画像補正= <span class="ni">&amp;lt;</span>!-- 画像の横幅が広く、高さが小さい場合に“yes”を記入 --<span class="ni">&amp;gt;</span>
+|背景色= band
+|別名= <span class="ni">&amp;lt;</span>!-- ニックネーム等ではない --<span class="ni">&amp;gt;</span>
+|出身地= {{JPN}}
+|ジャンル= [[ロック (音楽)|ロック]]<span class="ni">&amp;lt;</span>br/<span class="ni">&amp;gt;</span>[[ポピュラー音楽|ポップス]]<span class="ni">&amp;lt;</span>br/<span class="ni">&amp;gt;</span>[[アシッドジャズ]]<span class="ni">&amp;lt;</span>br/<span class="ni">&amp;gt;</span>[[オルタナティヴ・ロック|オルタナティヴ]]<span class="ni">&amp;lt;</span>br/<span class="ni">&amp;gt;</span>[[ファンク]]<span class="ni">&amp;lt;</span>br/<span class="ni">&amp;gt;</span>[[アバンギャルド|エクスペリメンタル・ロック]]
+|活動期間= [[2003年]] - [[2012年]]<span class="ni">&amp;lt;</span>br/<span class="ni">&amp;gt;</span>第一期: [[2003年]]-[[2005年]]<span class="ni">&amp;lt;</span>br/<span class="ni">&amp;gt;</span>第二期: [[2005年]]-[[2012年]]
+|レーベル= [[EMIミュージック・ジャパン]]/[[Virgin Music]]（現：[[ユニバーサルミュージック (日本)|ユニバーサルミュージック]]）
+|事務所= [[黒猫堂]]
+|共同作業者= [[井上雨迩]]
+|公式サイト= [https://tokyojihen.com/ 東京事変 トップページ]
+|メンバー= [[椎名林檎]]（[[ボーカル]]）<span class="ni">&amp;lt;</span>br /<span class="ni">&amp;gt;</span>[[亀田誠治]]（[[ベース (弦楽器)|ベース]]）<span class="ni">&amp;lt;</span>br/<span class="ni">&amp;gt;</span>[[浮雲 (ギタリスト)|浮雲]]（[[ギター]]）<span class="ni">&amp;lt;</span>br /<span class="ni">&amp;gt;</span>[[畑利樹|刄田綴色]]（[[ドラムセット|ドラムス]]）<span class="ni">&amp;lt;</span>br /<span class="ni">&amp;gt;</span>[[伊澤一葉]]（[[キーボード_(楽器)|キーボード]]）
+|旧メンバー= [[ヒイズミマサユ機|H是都M]]（キーボード）<span class="ni">&amp;lt;</span>br /<span class="ni">&amp;gt;</span>[[ヒラマミキオ|晝海幹音]]（ギター）
+}}
+&#39;&#39;&#39;東京事変&#39;&#39;&#39;（とうきょうじへん、英称：{{lang|en|Tokyo Incidents}}<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>シングル『[[修羅場 (曲)|修羅場]]』、アルバム『[[大人 (アダルト)]]』ブックレット。<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{cite web|url=http://www.tv-asahi.co.jp/music/contents/after/0056/|title=ミュージックステーション|date=2005年11月4日 |accessdate=2007年6月1日 |author=MUSIC STATION}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>、{{lang|en|Incidents Tokyo}}<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>アルバム『[[スポーツ (東京事変のアルバム)|スポーツ]]』ブックレット。<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{cite web|url=http://www.kronekodow.com/english/musician/musician03.html|title= SR NEKOYANAGI LINE Incidents Tokyo|date=|accessdate=2014-11-23|publisher= [[黒猫堂]]}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>）は、[[2003年]]から[[2012年]]まで活動していた[[日本]]の[[バンド (音楽)|バンド]]である。所属レコード会社は[[EMIミュージック・ジャパン]]/[[Virgin Music]]（現：[[ユニバーサルミュージック (日本)|ユニバーサルミュージック]]）。[[2003年]]に結成。[[2012年]]の[[閏日]]に解散した<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{cite web|url= mfound.jp/news/2012/01/009276.html |title= 東京事変 解散を発表! |date= 2012-01-11 |accessdate= 2018-06-25 |publisher= mFound }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。
+
+== 概要 == 
+[[シンガーソングライター]]の[[椎名林檎]]を中心に2003年に結成された5人組の[[ロックバンド]]<span class="ni">&amp;lt;</span>ref name=&quot;rockinonartist&quot;<span class="ni">&amp;gt;</span>{{cite web|url= https://rockinon.com/artist/3166 |title= 東京事変の記事まとめ |date= |accessdate= 2018-06-25 |publisher= [[ロッキング・オン|rockinon.com]] }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。2012年2月29日の[[日本武道館]]公演をもって活動を終了<span class="ni">&amp;lt;</span>ref name=&quot;barksartist&quot;<span class="ni">&amp;gt;</span>{{cite web|url= https://www.barks.jp/artist/?id=1000000043 |title= 東京事変 プロフィール・バイオグラフィ・リンク |date= |accessdate= 2018-06-25 |publisher= [[BARKS]] }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。
+
+===バンドメンバーについて===
+それぞれが独自の[[音楽性]]を確立するプレイヤーで構成されており、[[演奏]][[技術]]・[[作曲|コンポーズ]]能力ともに&#39;&#39;&#39;非常に高い&#39;&#39;&#39;。故に、ライブにおいてはCD音源とは異なった多様かつ高度な[[編曲|アレンジ]]が展開される。
+
+はじめは椎名の表現者としての延命装置として生まれ、彼女が音楽と向き合って自身の音楽的成長を促すため設定した[[カリキュラム]]の様にスタートした<span class="ni">&amp;lt;</span>ref name=&quot;switch20103shiina&quot;<span class="ni">&amp;gt;</span>{{Cite journal|和書 |date = 2010-3 |title = LONG INTERVIEW 椎名林檎「鍛えて攻める」 |journal = SWITCH |volume = 28 |issue = 3 |pages = 32-37 |publisher = [[スイッチ・パブリッシング]] |accessdate = 2018-06-26 }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;&amp;lt;</span>ref name=&quot;switch20116shiina&quot;<span class="ni">&amp;gt;</span>{{Cite journal|和書 |date = 2011-6 |title = 特集：東京事変ビューティフル・ディスカバリー（前編） 椎名林檎 瞬間を生きるために |journal = SWITCH |volume = 29 |issue = 6 | pages = 28-34 |publisher = [[スイッチ・パブリッシング]] |accessdate = 2018-06-26 }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。そして[[伊澤一葉]]と[[浮雲 (ギタリスト)|浮雲]]が加入した際は、彼らの様に『実力がある』と言われながらも普段は[[アンダーグラウンド]]や[[インディーズ]]で活動している陽の目を見ない才能には自分たちの内輪だけで循環するのではなくメジャーの場でキチンと勝負して欲しいと思い、自分の方から一緒にやってくれないかと誘った<span class="ni">&amp;lt;</span>ref name=&quot;musica20117shiina&quot;<span class="ni">&amp;gt;</span>{{Cite journal|和書 |date = 2011-7 |title = 椎名林檎インタビュー |journal = MUSICA |volume = 5 |issue = 7 |pages = 24-29 |publisher = 株式会社FACT |accessdate = 2018-06-19 }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;&amp;lt;</span>ref name=&quot;switch20103longinterview&quot;<span class="ni">&amp;gt;</span>{{Cite journal|和書 |date = 2010-3 |title = 特集：東京事変運動的音楽論 LONG INTERVIEW 椎名林檎 鍛えて攻める |journal = SWITCH |volume = 29 |issue = 6 |pages = 28-34 |publisher = [[スイッチ・パブリッシング]] |accessdate = 2018-07-02 }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。椎名の意識の変化に伴い、バンドもその彼らを世間に通用させるまでの過程そのものをビジネスとすることを目的としたプロジェクトへと変化して行った<span class="ni">&amp;lt;</span>ref name=&quot;musica20117shiina&quot;/<span class="ni">&amp;gt;&amp;lt;</span>ref name=&quot;switch20103longinterview&quot;/<span class="ni">&amp;gt;</span>。この過程について椎名は「学習機関に始まり（『[[教育 (東京事変のアルバム)|教育]]』）、職業訓練校、研究室・実験室を経て（『[[大人 (アダルト)]]』〜『[[スポーツ (東京事変のアルバム)|スポーツ]]』）、最終的にメンバー各々がそれぞれ独立して稼働できる生産工場となった（『[[大発見]]』）」と表現した<span class="ni">&amp;lt;</span>ref name=&quot;switch20103shiina&quot;/<span class="ni">&amp;gt;&amp;lt;</span>ref name=&quot;switch20116shiina&quot;/<span class="ni">&amp;gt;&amp;lt;</span>ref name=&quot;musica20117shiina&quot;/<span class="ni">&amp;gt;&amp;lt;</span>ref name=&quot;switch20117shiina&quot;<span class="ni">&amp;gt;</span>{{Cite journal|和書 |date = 2011-7 |title = 特集：東京事変ビューティフル・ディスカバリー（後編） 椎名林檎 そして見つけたもの |journal = SWITCH |volume = 29 |issue = 7 |page = 78 |publisher = [[スイッチ・パブリッシング]] |accessdate = 2018-06-26 }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。
+
+=== 結成の経緯 ===
+2003年当時、引退を考えるほど音楽活動の継続にモチベーションを見出せなかった椎名林檎が「メンバーたちのために書き下ろすつもりで曲を書けば意欲が湧くのではないか」と考えて結成<span class="ni">&amp;lt;</span>ref name=&quot;rockinonjapan2014.11.23&quot;<span class="ni">&amp;gt;</span>{{Cite journal |和書 |publisher= [[ロッキング・オン]] |year= 2014 |month= 12 |title= 椎名林檎 ソロ5年半ぶりの傑作『日出処』のすべて |journal=ROCKIN’ON JAPAN 12月号 |volume= 28 |issue= 17 |serial= 445 |pages= 48-72 |accessdate= 2014-11-23}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。当初は椎名の[[ツアー]]の[[バックバンド]]として稼働していたが、2004年からは本人が参加することで正式なバンドとして活動を開始する<span class="ni">&amp;lt;</span>ref name=&quot;natalieartist&quot;<span class="ni">&amp;gt;</span>{{cite web|url= https://natalie.mu/music/artist/792 |title= 東京事変の記事まとめ |date= |accessdate= 2018-06-25 |publisher= [[ナタリー (ニュースサイト)|音楽ナタリー]] }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。メンバーを決めたのは椎名で、普段から[[ライブハウス]]などを巡って探していた<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{Cite interview|subject= GUEST ROOM |interviewer= クリス・ペプラー |url= http://www.j-wave.co.jp/original/tokiohot100/guest_past/past_20041031.htm |title= GUEST: 東京事変 |work=TOKIO HOT100 |publisher= [[J-WAVE|J-WAVE WEBSITE]] |date= 2004-10-31 |accessdate= 2018-04-29 }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。
+=== メンバー交代 ===
+2005年、所属バンド「[[PE&#39;Z]]」での活動と両立できないとして、[[H ZETT M|H是都M]]が脱退を表明。新たに[[伊澤一葉]]の加入が決まった。またその間に[[ヒラマミキオ|晝海幹音]]もソロ活動に集中するために脱退することになり、代わって椎名の以前からの知人であった[[浮雲 (ギタリスト)|浮雲]]が参加することとなった。<span class="ni">&amp;lt;</span>ref name=&quot;rockinonjapan2014.11.23&quot;/<span class="ni">&amp;gt;&amp;lt;</span>ref name=&quot;toshibaemi1&quot;<span class="ni">&amp;gt;</span>{{cite interview |subject= 東京事変 |interviewer=  |title= オフィシャルインタビュー 1/2 |url= http://www.toshiba-emi.co.jp/tokyojihen/pop/index2_j.htm |program= [[東芝EMI]] |date=  |accessdate= 2016-08-01 |archiveurl= https://web.archive.org/web/20051125205041/http://www.toshiba-emi.co.jp/tokyojihen/pop/index2_j.htm |archivedate= 2005年11月25日 |deadlinkdate= 2017年10月 }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;&amp;lt;</span>ref name=&quot;toshibaemisecondseason&quot;<span class="ni">&amp;gt;</span>{{Cite web|url= http://www.toshiba-emi.co.jp/tokyojihen/news/index_j.htm|title= 東京事変 セカンドシーズンへ|publisher= [[東芝EMI]]|date= 2005-07-01|accessdate= 2016-08-07|archiveurl= https://web.archive.org/web/20050703015040/http://www.toshiba-emi.co.jp/tokyojihen/news/index_j.htm|archivedate= 2005年7月3日|deadlinkdate= 2017年10月}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>
+
+全国ツアー「[[Dynamite out#東京事変 live tour 2005 “dynamite!”|dynamite!]]」中には既に2人の脱退は決まっていた。せめてピアノだけでも欲しいと思った椎名は生ピアノが弾けるキーボーディストを探そうとして、以前、H是都Mに紹介された伊澤一葉のことを思い出した。プレイヤーとしてだけでなく彼の楽曲も欲しかった椎名は、ツアー終了の翌日から早速彼の消息を探り始め、連絡が取れるとすぐに参加をオファーした。初めは「新しくバンド（[[あっぱ]]）を始めたばかりだし、J-POPの超メジャー・フィールドで自分がやれるとは思わない」などと言われて断られていたが、最終的には彼の承諾を得て2005年4月末に加入が決定した。ギタリストについては、生半可なメンバーを入れるくらいなら曲ごとに最強のゲストを呼んだ方が良いとして当初は入れないことにしていた。椎名は多忙の亀田の代わりにキーボードの伊澤に自分のパートとベースラインを同時に弾いてもらってドラムの刄田との3人でリハーサル（音合わせ）を始めたが、伊澤に「CDにした時の作品が想像出来ない」と言われ、仕方なくギタリストを呼ぶことにした。色々試した中でメンバーが気に入ったのは2ndアルバムのデモで演奏していた浮雲だったが、個人的な音楽制作など椎名にとっては仕事にしない部分でのパートナーであり、ソロアルバムのレコーディングや東京事変のデモ音源の制作を手伝ってもらったり<span class="ni">&amp;lt;</span>ref group=&quot;注&quot;<span class="ni">&amp;gt;</span>2ndアルバムだけでなく1stの時も椎名はデモ音源のギターを弾いてもらっていた。<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>、前メンバー脱退の際には相談に乗ってもらったりしていた彼を加入させることは、彼女にとってバンドに自分のエゴを持ち込むようで抵抗があった。彼の方も「誰も弾かなかったら俺が弾いてやるよ」と言うだけでなかなか自分の方からはやるとは言わず、結局、正式に加入が決まったのはアルバム『[[大人 (アダルト)]]』レコーディングのわずか2、3日前のことだった。<span class="ni">&amp;lt;</span>ref name=&quot;rockinonjapan2014.11.23&quot;/<span class="ni">&amp;gt;&amp;lt;</span>ref name=&quot;toshibaemi1&quot;/<span class="ni">&amp;gt;&amp;lt;</span>ref name=&quot;toshibaemisecondseason&quot;/<span class="ni">&amp;gt;</span>
+
+交代後、アルバム『[[娯楽 (バラエティ)]]』の時点では、椎名個人ではなくバンドとしての表現ができるようになったのに今さら第1期、第2期（東京事変）と言われるのもどうかということでバンド名を変えようかという話が出たこともあったが、アルバム『[[スポーツ (東京事変のアルバム)|スポーツ]]』の時点でメンバーの意識は「関係ない」「どちらでも構わない」「利用できるものは何でも使っておこう」という風に変わっていた<span class="ni">&amp;lt;</span>ref name=&quot;rockinonjapan20103&quot;<span class="ni">&amp;gt;</span>{{Cite journal|和書 |date = 2010-3 |title = 東京事変 |journal = ロッキング・オン・ジャパン |volume = 24 |issue = 3 |pages = 45-65 |publisher = [[ロッキング・オン]] |accessdate = 2018-06-25 }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;&amp;lt;</span>ref name=&quot;emimusicvariety&quot;<span class="ni">&amp;gt;</span>{{cite interview|subject=東京事変|interviewer= 小野田雄|title= 2007.9.26 3rd ALBUM『娯楽(バラエティ)』オフィシャル・インタビュー|url= http://www.tokyojihen.com/vmc/artist/domestic/tokyojihen/interview_070926.php |program= [[EMIミュージック・ジャパン]] |date= 2007-09-26 |accessdate= 2018-06-25 |archiveurl= http://web.archive.org/web/20140618145655/http://www.tokyojihen.com/vmc/artist/domestic/tokyojihen/interview_070926.php |archivedate= 2014年6月18日 }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。
+
+== メンバー ==
+{{Main|椎名林檎|亀田誠治|伊澤一葉|浮雲 (ギタリスト)|畑利樹|ヒラマミキオ|H ZETT M}}
+=== 最終メンバー ===
+* [[椎名林檎]] - [[ボーカル]]、[[ギター]]、[[ピアノ]]、[[ドラムセット|ドラムス]]
+* [[亀田誠治]] - [[ベース (弦楽器)|ベース]]、[[コーラス (ポピュラー音楽)|コーラス]] 
+* [[浮雲 (ギタリスト)|浮雲]] - ギター、[[マンドリン]]、ボーカル、[[ラップ]]、コーラス
+* [[畑利樹|刄田綴色]] - ドラムス、[[パーカッション]]、コーラス
+* [[伊澤一葉]] - [[鍵盤楽器]]（[[キーボード (楽器)|キーボード]]、ピアノ）、ギター、ボーカル、コーラス
+
+=== 元メンバー ===
+両者とも2005年7月1日まで参加。
+* [[H ZETT M|H是都M]]（エイチ ゼット エム） - 鍵盤楽器（キーボード、ピアノ）、コーラス
+
+* [[ヒラマミキオ|晝海幹音]]（ヒラマ ミキオ） - [[ギター]]、ボーカル、コーラス
+
+&#39;&#39;ツアーバンド時代の各メンバーの名前の表記は[[Electric Mole #東京事変|こちら]]を参照。&#39;&#39;
+
+=== プロデューサー ===
+* [[井上雨迩]] - [[レコーディング・エンジニア|レコーディング<span class="ni">&amp;amp;</span>ミキシング・エンジニア]]
+: 椎名とはソロ時代から<span class="ni">&amp;lt;</span>ref group=&quot;注&quot;<span class="ni">&amp;gt;</span>4枚目のシングル「[[本能 (曲)|本能]]」やセカンドアルバム『[[勝訴ストリップ]]』の頃から。<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>、亀田とは椎名と仕事をする前からの付き合いとなる。メンバー曰く「六人目の東京事変」<span class="ni">&amp;lt;</span>ref name=&quot;switch20116works&quot;<span class="ni">&amp;gt;</span>{{Cite journal|和書 |date = 2011-6 |title = 特集：東京事変ビューティフル・ディスカバリー（前編） TOKYO INCIDENTS STUDIO WORKS 2010-2011 |journal = SWITCH |volume = 29 |issue = 6 |pages = 40-45 |publisher = [[スイッチ・パブリッシング]] |accessdate = 2018-06-25 }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。本人もただのエンジニアではなく、いちプレイヤーのつもりで[[ミキシング]]作業に臨んでいるという<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{Cite journal|和書 |date = 2010-3 |title = INTERVIEW 浮雲「瞬発力と導火線」 |journal = SWITCH |volume = 28 |issue = 3 |pages = 44-45 |publisher = [[スイッチ・パブリッシング]] |accessdate = 2018-06-25 }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。
+
+=== サポートメンバー ===
+* [[佐野康夫]] - ドラム
+: 2006年7月に行われたライブイベント「[[SOCIETY OF THE CITIZENS|SOCIETY OF THE CITIZENS vol.1]]」で、骨折していた刄田の代りに出演。
+
+== 楽曲製作 ==
+=== デモ ===
+椎名と伊澤の持ってくる[[デモテープ|デモ]]は[[メロディ|歌メロ]]からリズム・パターンまで全て入った状態で、二人はその段階で[[譜面]]も書いてくる。また浮雲は譜面を書けないので、二人が彼の口ずさむメロディを採譜して譜面に起こす。<span class="ni">&amp;lt;</span>ref name=&quot;switch20116discovery&quot;<span class="ni">&amp;gt;</span>{{Cite journal|和書 |date = 2011-6 |title = 特集：東京事変ビューティフル・ディスカバリー（前編） 椎名林檎 瞬間を生きるために |journal = SWITCH |volume = 29 |issue = 6 |pages = 28-34 |publisher = [[スイッチ・パブリッシング]] |accessdate = 2018-06-25 }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{Cite journal|和書 |date = 2010-3 |title = INTERVIEW 伊澤一葉「原点と仲間」 |journal = SWITCH |volume = 28 |issue = 3 |pages = 46-47 |publisher = [[スイッチ・パブリッシング]] |accessdate = 2018-06-25 }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>
+
+伊澤のデモは歌メロやギター・パートもキーボードで作っていることが多い。ギターを弾くようになってからはギターで作ることもある。メロディは歌声の代わりにキーボードなどで作った音が入っているので最終的な形が想像しにくい。またデモの段階で[[フレーズ]]一つ一つまで指定した全員分の演奏パターンをあらかじめ用意する。絶対その通りに演奏しなければならないというわけではないが、まずはその設計図通りやらせようとする。また自分の曲だけでなく他のメンバーの曲でも譜面起こしから曲の解析、アレンジまで行ってデモを何パターンも作り上げる。<span class="ni">&amp;lt;</span>ref name=&quot;rockinonjapan20103&quot;/<span class="ni">&amp;gt;&amp;lt;</span>ref name=&quot;emimusicvariety&quot;/<span class="ni">&amp;gt;&amp;lt;</span>ref name=&quot;sportsinterview&quot;<span class="ni">&amp;gt;</span>{{cite web|url= http://www.tokyojihen.com/sp/notes/interview/toct26940/ |title= 「スポーツ」オフィシャル・インタビュー |date= |accessdate= 2018-06-25 |work= 東京事変公式サイト|publisher= [[ ユニバーサルミュージック (日本)|ユニバーサル ミュージック合同会社]] }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>
+
+浮雲はメロディ部分は歌いながら作ることが多いので、デモには歌詞ではなく歌声を入れている。歌メロだけでなくコーラスも入っているので他のメンバーは全体の輪郭がつかみやすい。<span class="ni">&amp;lt;</span>ref name=&quot;emimusicvariety&quot;/<span class="ni">&amp;gt;&amp;lt;</span>ref name=&quot;sportsinterview&quot;/<span class="ni">&amp;gt;&amp;lt;</span>ref name=&quot;discoveryinterview&quot;<span class="ni">&amp;gt;</span>{{cite web|url= http://www.tokyojihen.com/special/?cat=9 |title= 「大発見」オフィシャル・インタビュー |date= |accessdate= 2018-06-25 |work= 東京事変公式サイト|publisher= [[ ユニバーサルミュージック (日本)|ユニバーサル ミュージック合同会社]] }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>
+
+他のメンバーのデモがドラムなど色々な音を入れてくるのに対し、亀田のデモは一部に鼻歌や[[打ち込み]]もあるものの、ほとんどが[[アコースティック・ギター]]あるいはピアノと自分自身の歌によるシンプルな弾き語りである。しかも普段はアレンジやサウンドプロデュースで曲を仕上げる仕事が多く、メロディを作る機会はあまりないのとは対照的に、東京事変では基本的にメロディと仮歌だけでアレンジは施していないものを提供する。すごくシンプルなデモだが曲の核となるものが見えやすい。<span class="ni">&amp;lt;</span>ref name=&quot;emimusicsenko&quot;<span class="ni">&amp;gt;</span>{{cite interview|subject=東京事変|interviewer= 小野田雄|title= 「閃光少女」インタビュー|url= http://www.tokyojihen.com/vmc/artist/domestic/tokyojihen/interview_071121.php |program= [[EMIミュージック・ジャパン]] |date= 2007-11-21 |accessdate= 2018-06-25 |archiveurl= http://web.archive.org/web/20140718223200/http://www.tokyojihen.com/vmc/artist/domestic/tokyojihen/interview_071121.php |archivedate= 2014年7月18日 }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;&amp;lt;</span>ref name=&quot;soraonnanokointerview&quot;<span class="ni">&amp;gt;</span>{{cite web|url= http://www.tokyojihen.com/sp/notes/interview/toct40320/ |title= 「空が鳴っている／女の子は誰でも」オフィシャル・インタビュー |date= |accessdate= 2018-06-25 |work= 東京事変公式サイト|publisher= [[ ユニバーサルミュージック (日本)|ユニバーサル ミュージック合同会社]] }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{Cite journal |和書 |publisher= [[リットーミュージック]] |year= 2010|month= |title= FEATURED BASSISTS 1 亀田誠治／東京事変|journal=ベースマガジン 3月号 |volume= |issue= |serial= |pages= |accessdate= 2014-12-06}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>
+
+それらのデモを基に、スタジオでは椎名が各楽曲の作者や演奏者に、フレーズ、メロディ、[[コード]]などの要素のうち、その時に何を前面に持って来たいかを質問・確認して主とする要素を明確化し、楽曲へのアプローチを決める<span class="ni">&amp;lt;</span>ref name=&quot;switch20116works&quot;/<span class="ni">&amp;gt;</span>。
+=== 作詞 ===
+2枚目のアルバム『大人』までは椎名が歌詞を担当し、3枚目の『娯楽』から5枚目の『大発見』までは、一部の曲を浮雲と伊澤も書いている。バンドとして最後にリリースした[[ミニアルバム]]『color bars』では、メンバー全員が作詞を行っている。
+
+椎名以外のメンバーが作曲する場合は常に曲先行で、椎名が歌詞を書く場合は出来た曲に後から当てて行く。普段、椎名はまず[[和声]]とメロディが浮かび、その時のイメージと音感で歌詞を連ねていくが、東京事変では曲を聞いてメロディだけでその作家が作曲した背景まで手繰って行き、&quot;たった一つしかない正解”の歌詞を全身全霊を傾けて獲得しようと試みる。<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{Cite journal|和書 |date = 2010-4 |title = 東京事変 |journal = ロッキング・オン・ジャパン |volume = 24 |issue = 4 |pages = 72-83 |publisher = [[ロッキング・オン]] |accessdate = 2018-06-14 }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>
+
+浮雲の曲は楽器ありきでそこに声が乗っているというとらえ方が正しく、歌謡的要素がないので、そこを一番汲み取れる本人が歌詞を書くことが多い。浮雲が書いた方が自然な時はそうするし、歌謡寄りに持って行ってもいいのではと思えば椎名が歌詞を書くこともある。<span class="ni">&amp;lt;</span>ref name=&quot;switch20116discovery&quot;/<span class="ni">&amp;gt;&amp;lt;</span>ref name=&quot;discoveryinterview&quot;/<span class="ni">&amp;gt;</span>
+
+=== 作曲 ===
+バンドとしてのデビュー曲である1stシングル「[[群青日和]]」はH是都Mが作曲したが、1stアルバム『教育』と2ndアルバム『大人 (アダルト)』および2ndシングル「遭難」と3rdシングル「修羅場」収録の楽曲のほとんどは椎名の手による。3枚目のアルバム『[[娯楽 (バラエティ)]]』とそれに関連するシングルでは椎名は参加せず、すべての楽曲を彼女以外のバンドメンバー（浮雲、伊澤、亀田）が作曲した。4枚目のアルバム『スポーツ』とそれに付随するシングルからは再び椎名も作曲に参加し、一部の楽曲では初めてメンバーと共作した。5枚目のアルバム『大発見』では、前作以上に共作曲が増えている。バンド最後のアルバム『color bars』では、メンバー全員が作曲を行っている。
+
+=== 編曲・プロデュース ===
+編曲は基本的にバンド全体で行うが、セカンドアルバム『大人 (アダルト)』では椎名および伊澤が中心となって行った<span class="ni">&amp;lt;</span>ref group=&quot;注&quot;<span class="ni">&amp;gt;</span>『大人』に収録された「秘密」と「手紙」では、前者は伊澤、後者は椎名が単独で編曲を行っている。<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。椎名、伊澤、浮雲は3人ともシンガー・ソングライター気質ではないので、アレンジまで含めた作曲をしてくる。そこからは作者の意図通りにそれを具現化したりバンド全員で編曲したり、あるいは椎名のソロ時代からの彼女と亀田との独特なやり方に当てはめて作ったりと、曲を完成させるやり方は幾通りもある。<span class="ni">&amp;lt;</span>ref name=&quot;toshibaemi1&quot;/<span class="ni">&amp;gt;&amp;lt;</span>ref name=&quot;emimusicsenko&quot;/<span class="ni">&amp;gt;</span>
+
+プロデュースはレコーディング・エンジニアの[[井上雨迩]]。
+
+=== レコーディング ===
+レコーディングは一部を除き、それぞれが個別に録音するバラ録りではなく、バンド・メンバー全員で一斉に演奏して行う[[同時録音|一発録り]]<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{cite web|url=http://kame-on.com/college/faculty_of_arts/seminar/07.html|title=講義7：スウィングを感じよう!|work=亀田大学芸術学部|date=2013-09-19|accessdate=2015-01-26 |author=[[亀田誠治|亀の恩返し]]}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。
+
+== 来歴 ==
+=== デビュー前 ===
+; 2003年
+* 椎名林檎のバックバンドとして結成。当初のメンバーは、椎名林檎、刄田綴色、亀田誠治、H是都M、晝海幹音の5名。同年の椎名林檎実演ツアー「雙六エクスタシー」で初お披露目。
+=== バンド「東京事変」デビュー ===
+; 2004年
+* 5月30日、椎名林檎が「今の段階では一人きりで作る音楽はやり終えている」としてバンド「東京事変」として活動していくことを宣言<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{cite web|url= https://www.barks.jp/news/?id=1000000481 |title= 椎名林檎、“東京事変”のバンドヴォーカリストとして活動開始! |date= 2004-05-31 |accessdate= 2017-12-28 |work= |publisher= [[BARKS]] }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。いくつかのライブに出演し、初参加の『[[FUJI ROCK FESTIVAL]]』では[[ヘッドライナー (コンサート)|ヘッドライナー]]を務め、入場規制がかかるほどの注目を集める。
+* 9月8日、[[東芝EMI]]（当時）よりシングル「[[群青日和]]」でメジャーデビューを果たす。 
+* 11月25日、1stアルバム『[[教育 (東京事変のアルバム)|教育]]』リリース。
+
+=== メンバーチェンジ ===
+; 2005年
+* 1月17日より初のライブツアー「[[Dynamite out|東京事変 live tour 2005 “dynamite!”]]」を10都市14公演で開催。
+* 7月1日、H是都Mと晝海幹音の脱退を発表{{refnest|group=注|2人の脱退は“dynamite!”ツアーが始まる前には既に決定していたという<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{Cite journal |和書 |publisher= [[ロッキング・オン]] |year= 2006 |month= |title= |journal=ROCKIN’ON JAPAN 2月号 |volume= |issue= |serial= |page= 63}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。}}<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{cite web|url= http://www.tv-asahi.co.jp/smt/f/geinou_tokuho/hot/?id=hot_20050702_120 |title= 林檎「東京事変」からメンバー2人も脱退! |date= 2005-07-02 |accessdate= 2017-12-28 |work= |publisher= [[テレビ朝日]] }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。脱退後はそれぞれ、H是都MはPe&#39;zのヒイズミマサユ機として、晝海幹音はソロ名義の昼海幹音（現在はヒラマミキオ）として活動していくとされた<span class="ni">&amp;lt;</span>ref name=&quot;hmv1&quot;<span class="ni">&amp;gt;</span>{{cite web|url= http://www.hmv.co.jp/en/news/article/509160074/ |title= 東京事変、メンバー増量! |date= 2005-09-16 |accessdate= 2017-12-28 |work= |publisher= [[HMV]] }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。
+* 9月、新メンバー発表。椎名、亀田、刄田の3人は新たに[[浮雲 (ギタリスト)|浮雲]]と[[伊澤一葉]]の2人を迎え、5人で&#39;&#39;&#39;第二期東京事変&#39;&#39;&#39;を始動<span class="ni">&amp;lt;</span>ref group=&quot;注&quot;<span class="ni">&amp;gt;</span>この2人が加わったことにより、最終的な顔ぶれとなった。<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;&amp;lt;</span>ref name=&quot;hmv1&quot;/<span class="ni">&amp;gt;</span>。またそれを機に、バンドの[[シンボルマーク]]が[[折り鶴]]から[[孔雀]]に変更された。
+* 11月2日、3枚目（第二期としては最初）のシングル「[[修羅場 (曲)|修羅場]]」をリリース。
+
+=== 2006〜2008年 ===
+; 2006年
+* 1月25日、セカンドアルバム『[[大人 (アダルト)]]』をリリース。バンド初の[[オリコンチャート]]第1位を獲得<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{cite web|url=http://www.oricon.co.jp/news/rankmusic/10743/|title=東京事変、シングル、アルバム通じて初の№1獲得!|date=2006年1月30日 |accessdate=2007年6月1日 |author=[[オリコンチャート|オリコン]]}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。
+* 2月19日、[[日本武道館]]と[[大阪城ホール]]にて新メンバーの顔見世ライブ「DOMESTIC! Virgin LINE」を開催。
+* 4月7日より約2ヶ月にわたる全国ツアー「[[Just can&#39;t help it.|東京事変 “DOMESTIC!” Just can&#39;t help it.]]」を17都市21公演で開催。
+* 7月2日、日比谷野外音楽堂にて主催イベント「SOCIETY OF THE CITIZENS vol.1」を開催。ZAZEN BOYS、SOIL<span class="ni">&amp;amp;</span>&quot;PIMP&quot;SESSIONSと共演。 
+* 12月30日（幕張）・31日（大阪）、[[COUNTDOWN JAPAN#COUNT DOWN JAPAN 06/07|COUNTDOWN JAPAN 06/07]]に出演。
+; 2007年
+* 9月26日、3rdアルバム『[[娯楽 (バラエティ)]]』をリリース。前アルバム発売の際のインタビューで「（今後について）自分は曲を書かず、作詞と歌のプレイだけに関わったアルバムを作ってみたい」<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{Cite journal |和書 |publisher= [[ロッキング・オン]] |year= 2006 |month= |title= |journal=ROCKIN’ON JAPAN 2月号 |volume= |issue= |serial= |page= 64}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>と発言していた通り、アルバム『娯楽 (バラエティ)』およびシングル「[[キラーチューン]]」と「[[OSCA (曲)|OSCA]]」では、一部の作詞と歌唱のみを担当した。
+* 10月18日より全国7都市での[[ライブハウス]]ツアー「[[Spa <span class="ni">&amp;amp;</span> Treatment|東京事変 live tour 2007 Spa <span class="ni">&amp;amp;</span> Treatment]]」を開催。
+; 2008年
+* この年、ソロデビュー10周年を迎えた椎名が久しぶりにソロ活動を再開。そのため、東京事変としての活動は限定的となった。
+* 8月15日、[[ライジング・サン・ロックフェスティバル]]に出演。翌16日には椎名がソロとして単独で出演した。
+* 8月23日・24日、[[JCBホール]]にて主催イベント「SOCIETY OF THE CITIZENS vol.Ⅱ」を開催。
+
+=== 2009〜2011年 ===
+; 2009年
+* 前年に引き続き、椎名は久しぶりのオリジナル・アルバムを発表するなどソロとしての活動を継続。そのため、年の前半は椎名以外のメンバーもそれぞれの活動に専念することになった。亀田は本業のプロデューサーとして様々なアーティストたちと仕事をし、刄田は[[フジファブリック]]のレコーディングやライブにサポート・メンバーとして参加した。伊澤は、[[ELLEGARDEN]]の[[細美武士]]が結成したバンド「[[the HIATUS]]」にツアーメンバーとして参加した<span class="ni">&amp;lt;</span>ref group=&quot;注&quot;<span class="ni">&amp;gt;</span>[[堀江博久]]が出演できない時の代役、後に正式参加。<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。年末、4作目のアルバム発売へ向けて2年ぶりに制作活動を再開する。
+* 12月2日、6枚目のシングル「[[能動的三分間]]」を発売。シングルとしては初のオリコンチャート第1位を獲得した。同楽曲は[[江崎グリコ]]「ウォータリング キスミントガム」のCMソングに起用され、その[[イメージキャラクター]]にはCM初出演となる椎名が起用された（ナレーションは浮雲が担当）。
+* 12月30日、[[COUNTDOWN JAPAN#COUNTDOWN JAPAN 09/10|COUNTDOWN JAPAN 09/10]]に出演。
+; 2010年
+* 2月24日、4作目となるアルバム『[[スポーツ (東京事変のアルバム)|スポーツ]]』を発売。『大人』以来の&#39;&#39;&#39;オリコンアルバムチャート1位&#39;&#39;&#39;を獲得する。
+* 3月より2年半ぶりの全国ツアー「[[ウルトラC (東京事変の映像作品)|東京事変 live tour 2010 ウルトラC]]」を開催。
+; 2011年
+* 2月23日に7枚目のシングル「[[空が鳴っている/女の子は誰でも|空が鳴っている／女の子は誰でも]]」をリリースする予定だったが、同年2月10日に路上で泥酔した刄田が公務執行妨害で逮捕されたため、発売の延期とプロモーション活動の自粛を決定した<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{cite web|url=http://emimusic.jp/tokyojihen/news/|title=東京事変｜NEWS|(2011年2月12日) |accessdate=2011年2月13日 }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。「空が鳴っている」は椎名がイメージキャラクターを務めるグリコ「ウォータリング キスミント」のCM第4弾に使用されていたが、この不祥事によってサウンドをバンドの演奏からピアノによるアコースティックなアレンジに変更し、名義も「椎名林檎」に変えて放送を継続した<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{cite web|url= https://natalie.mu/music/news/45063|title= 「キスミント」CM楽曲、椎名林檎ソロアレンジに変更 |date= 2011-02-16 |accessdate= 2017-12-29 |work= |publisher= [[ナタリー (ニュースサイト)|音楽ナタリー]] }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。そして「女の子は誰でも」も新たに椎名がCMモデルに起用された[[資生堂]]「マキアージュ」のCMソングとして20日から使用される予定だったが、椎名林檎ソロアレンジによるピアノ伴奏の[[スウィングジャズ]]ナンバーの「女の子は誰でも 〜素顔編〜」に変更して放送することになった<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{cite web|url= https://natalie.mu/music/news/45287|title= 林檎出演「マキアージュ」CMソング、ピアノソロアレンジに |date= 2011-02-21 |accessdate= 2017-12-29 |work= |publisher= [[ナタリー (ニュースサイト)|音楽ナタリー]] }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。またテレビの音楽番組への出演<span class="ni">&amp;lt;</span>ref group=&quot;注&quot;<span class="ni">&amp;gt;</span>[[テレビ朝日]]系列「[[ミュージックステーション]]」に2週連続出演する予定だった。<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>も取り消された。3月14日に刄田は略式裁判により罰金刑となったため、協議の結果4月5日から活動を再開することとなった。一連の件に関して、刄田は公式ウェブサイトにて謝罪している。
+* 5月11日、発売延期となっていたシングル「空が鳴っている／女の子は誰でも」がリリースされる。
+* 6月29日、5作目のアルバム『[[大発見]]』を発売。&#39;&#39;&#39;オリコンチャート1位&#39;&#39;&#39;を獲得。
+* 9月30日からライブツアー「[[Discovery (東京事変の映像作品)|東京事変 Live Tour 2011 Discovery]]」を開催。
+* 12月31日、椎名が「[[第62回NHK紅白歌合戦]]」に出場し、それに伴い東京事変メンバーも出演した。前半の最高視聴率を記録。
+
+=== バンド解散 ===
+; 2012年
+* 1月11日、バンドの解散を発表。同日付で更新されたオフィシャルサイトには各メンバーからのコメントが掲載された。椎名本人による解散声明文には「事変は来る[[閏日]]解散致します」とあり、解散日は2012年2月29日に決定した<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{cite news | title = 東京事変がバンド解散を発表 | url = http://natalie.mu/music/news/62510 | newspaper = [[ナタリー (ニュースサイト)|ナタリー]] | date = 2012-01-11 | accessdate =2012-01-11 }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。
+* 1月18日、バンドメンバーがそれぞれ作詞作曲して持ち寄った楽曲5曲を収録したラストアルバム『[[color bars]]』をリリース。
+* 2月14日より最後のツアー「東京事変 Live Tour 2012 Domestique Bon Voyage」を開催。
+* 2月29日の[[日本武道館]]公演をもって解散。
+
+=== 解散後 ===
+* 2013年2月27日、[[CD-BOX]]『[[Hard Disk]]』と[[ミュージック・ビデオ]]集『[[Golden Time (東京事変の映像作品)|Golden Time]]』をリリース。それぞれに再集結した第一期・第二期の新旧メンバーにより新録された楽曲や映像が収録された。
+* 2016年8月22日、第二期のメンバー全員が演奏に参加した椎名の配信限定シングル「[[ジユーダム]]」がリリースされる<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{cite web|url= https://sp.universal-music.co.jp/ringo/15th/discography/index.php?cid=04<span class="ni">&amp;amp;</span>did=uu1as00327 |title= ジユーダム |date= 2016-08-22 |accessdate= 2017-12-28 |work= 椎名林檎 15周年特設サイト|publisher= [[ユニバーサルミュージック (日本)|ユニバーサル ミュージックジャパン]] }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。「東京事変」の表記は無かったものの、ジャケットにはシンボルマークである孔雀が描かれている<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{cite web|url= http://realsound.jp/2016/09/post-9212_2.html|title= 椎名林檎、“2020年”に向け始まった新たな物語ーー新曲2曲に隠されたメッセージを考察|date= 2016-09-13|accessdate= 2017-12-29 |publisher= [[サイゾー|Real Sound]]}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。
+* 2016年12月31日、「&#39;&#39;&#39;[[第67回NHK紅白歌合戦]]&#39;&#39;&#39;」に椎名が出場した際、第二期のメンバー全員がバックバンドとして出演した。
+*2018年3月、『[[大人 (アダルト)|透明人間]]』が[[ライオン (企業)|ライオン]]「[[NONIO]]」のCMソングに起用される。
+
+== ディスコグラフィー  ==
+=== シングル ===
+{| class=&quot;wikitable&quot; style=&quot;text-align:center; font-size:small;&quot;
+|-
+! 
+! 発売日 
+! タイトル 
+! [[規格品番]] 
+! 最高位<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{Cite web||url=http://www.oricon.co.jp/prof/345261/rank/single/|title=東京事変のCDシングルランキング|work=オリコン芸能人事典|publisher=[[オリコン]]|accessdate=2017-04-20}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span> 
+! 収録アルバム
+|-
+| 1st
+| 2004年9月8日
+| &#39;&#39;&#39;[[群青日和]]&#39;&#39;&#39;
+| TOCT-4884
+| 2位
+| rowspan=&quot;2&quot; | 教育
+|-
+| 2nd
+| 2004年10月20日
+| &#39;&#39;&#39;[[遭難 (曲)|遭難]]&#39;&#39;&#39;
+| TOCT-4994
+| 2位
+|-
+| 3rd
+| 2005年11月2日
+| &#39;&#39;&#39;[[修羅場 (曲)|修羅場]]&#39;&#39;&#39;
+| TOCT-4936
+| 5位
+| 大人
+|-
+| 4th
+| 2007年7月11日
+| &#39;&#39;&#39;[[OSCA (曲)|OSCA]]&#39;&#39;&#39;
+| TOCT-40125
+| 2位
+| rowspan=&quot;2&quot; | 娯楽
+|-
+| 5th
+| 2007年8月22日
+| &#39;&#39;&#39;[[キラーチューン]]&#39;&#39;&#39;
+| TOCT-40137
+| 5位
+|-
+| 6th
+| 2009年12月2日
+| &#39;&#39;&#39;[[能動的三分間]]&#39;&#39;&#39;
+| TOCT-40280
+| 1位
+| スポーツ
+|-
+| 7th
+| 2011年5月11日
+| &#39;&#39;&#39;[[空が鳴っている/女の子は誰でも|空が鳴っている／女の子は誰でも]]&#39;&#39;&#39;
+| TOCT-40320
+| 6位
+| 大発見
+|}
+=== 配信曲 ===
+{| class=&quot;wikitable&quot; style=&quot;text-align:center; font-size:small;&quot;
+|-
+! 発売日
+! タイトル
+! 収録作品
+|-
+|rowspan=&quot;3&quot; | 2006年3月23日
+| &#39;&#39;&#39;秘密 for DJ&#39;&#39;&#39;
+|rowspan=&quot;3&quot; | ミュージックビデオ集『[[ADULT VIDEO]]』
+|-
+| &#39;&#39;&#39;恋は幻 for musician&#39;&#39;&#39;
+|-
+| &#39;&#39;&#39;黄昏泣き for mother&#39;&#39;&#39;
+|-
+| 2006年8月30日
+| &#39;&#39;&#39;[[少女ロボット]]&#39;&#39;&#39;
+| ライブビデオ『[[Just can&#39;t help it.|&quot;DOMESTIC!&quot;Just can&#39;t help it.]]』
+|-
+| 2010年7月28日
+|&#39;&#39;&#39;[[ドーパミント!]]&#39;&#39;&#39;
+| アルバム『大発見』
+|-
+| 2011年4月12日
+| &#39;&#39;&#39;[[夜明けのうた]]&#39;&#39;&#39;
+| [[YouTube]] EMI Records Japan 公式チャンネル<span class="ni">&amp;lt;</span>ref group=&quot;注&quot;<span class="ni">&amp;gt;</span>[[東日本大震災]]直後、[[YouTube]]でファンに向けて急遽公開された[[岸洋子]]のカバー曲。<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;&amp;lt;</span>ref<span class="ni">&amp;gt;</span>[http://www.youtube.com/watch?v=Qj_OGCbqplU 東京事変 - 夜明けのうた（EMI Records Japan 公式チャンネル）。]<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>
+|-
+| 2011年9月21日
+|&#39;&#39;&#39;[[天国へようこそ|天国へようこそ Tokyo Bay Ver.]]&#39;&#39;&#39;
+| ミュージックビデオ集『[[CS Channel]]』
+|-
+|}
+===スタジオアルバム===
+{| class=&quot;wikitable&quot; style=&quot;text-align:center; font-size:small;&quot;
+|-
+!<span class="ni">&amp;amp;</span>nbsp;
+! 発売日
+! タイトル
+! 規格品番
+! 最高位<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{Cite web||url=http://www.oricon.co.jp/prof/345261/rank/album/|title=東京事変のCDアルバムランキング|work=オリコン芸能人事典|publisher=[[オリコン]]|accessdate=2017-04-20}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span> 
+!備考
+|-
+| 1st
+| 2004年11月25日
+| &#39;&#39;&#39;[[教育 (東京事変のアルバム)|教育]]&#39;&#39;&#39;
+| TOCT-25452
+| 2位
+| 
+|-
+| rowspan=&quot;2&quot;| 2nd
+| rowspan=&quot;2&quot;| 2006年1月25日
+| rowspan=&quot;2&quot;| &#39;&#39;&#39;[[大人 (アダルト)]]&#39;&#39;&#39;
+| TOCT-25884
+| rowspan=&quot;2&quot;| 1位
+| style=&quot;text-align:left&quot; |<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定盤 &quot;HOMME&quot;仕様【CD+DVD：2枚組】<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+| TOCT-25885
+| style=&quot;text-align:left&quot; |<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>通常盤 &quot;FEMME&quot;仕様【CD】<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+| 3rd
+| 2007年9月26日
+| &#39;&#39;&#39;[[娯楽 (バラエティ)]]&#39;&#39;&#39;
+| TOCT-26350
+| 2位
+| 
+|-
+| 4th
+| 2010年2月24日
+| &#39;&#39;&#39;[[スポーツ (東京事変のアルバム)|スポーツ]]&#39;&#39;&#39;
+| TOCT-26940
+| 1位
+| 
+|-
+| 5th
+| 2011年6月29日
+| &#39;&#39;&#39;[[大発見]]&#39;&#39;&#39;
+| TOCT-27070
+| 1位
+| 
+|}
+=== ミニアルバム ===
+{| class=&quot;wikitable&quot; style=&quot;text-align:center; font-size:small;&quot;
+|-
+!<span class="ni">&amp;amp;</span>nbsp;
+!発売日
+!タイトル
+!規格品番
+! 最高位<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{Cite web||url=http://www.oricon.co.jp/prof/345261/rank/album/|title=東京事変のCDアルバムランキング|work=オリコン芸能人事典|publisher=[[オリコン]]|accessdate=2017-04-20}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span> 
+!備考
+|-
+| 1st
+| 2012年1月18日
+| &#39;&#39;&#39;[[color bars]]&#39;&#39;&#39;
+| TOCT-22311
+| 2位
+| 
+|}
+=== コンピレーション・アルバム ===
+{| class=&quot;wikitable&quot; style=&quot;text-align:center; font-size:small;&quot;
+|-
+!<span class="ni">&amp;amp;</span>nbsp;
+!発売日
+!タイトル
+!規格品番
+! 最高位<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{Cite web||url=http://www.oricon.co.jp/prof/345261/rank/album/|title=東京事変のCDアルバムランキング|work=オリコン芸能人事典|publisher=[[オリコン]]|accessdate=2017-04-20}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span> 
+!備考
+|-
+| ライブ・アルバム
+| 2012年2月15日
+| &#39;&#39;&#39;[[東京コレクション (アルバム)|東京コレクション]]&#39;&#39;&#39;
+| TOCT-28045
+| 1位
+| 
+|-
+| カップリング・アルバム
+| 2012年8月29日
+| &#39;&#39;&#39;[[深夜枠]]&#39;&#39;&#39;
+| TOCT-29000
+| 3位
+| 
+|-
+| コンプリートBOX
+| 2013年2月27日
+| &#39;&#39;&#39;[[Hard Disk]]&#39;&#39;&#39;
+| TOCT-29131
+| 15位
+| style=&quot;text-align:left&quot; | <span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>完全限定生産BOXセット<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|}
+=== アナログ盤 ===
+{| class=&quot;wikitable&quot; style=&quot;text-align:center; font-size:small;&quot;
+|-
+!発売日
+!タイトル
+!規格品番
+! 最高位<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{Cite web||url=http://www.oricon.co.jp/prof/345261/rank/album/|title=東京事変のCDアルバムランキング|work=オリコン芸能人事典|publisher=[[オリコン]]|accessdate=2017-04-20}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span> 
+!備考
+|-
+| 2004年11月25日
+| &#39;&#39;&#39;[[群青日和/遭難|群青日和／遭難]]&#39;&#39;&#39;
+| TOJT-25542
+| 108位
+| style=&quot;text-align:left&quot; |<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+| 2006年3月23日
+| &#39;&#39;&#39;[[ADULT VIDEO ORIGINAL SOUND TRACK]]&#39;&#39;&#39;
+| TOJT-25926
+| 221位
+| style=&quot;text-align:left&quot; |<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+| 2007年11月21日
+| &#39;&#39;&#39;[[娯楽 (バラエティ) 増刊号]]&#39;&#39;&#39;
+| TOJT-26351
+| 281位
+| style=&quot;text-align:left&quot; |<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|}
+=== 映像作品 ===
+{| class=&quot;wikitable&quot; style=&quot;text-align:center; font-size:small;&quot;
+|-
+! <span class="ni">&amp;amp;</span>nbsp;
+! 発売日
+! タイトル 
+! 規格 
+! 規格品番 
+! 最高位<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{Cite web||url=http://www.oricon.co.jp/prof/345261/rank/album/|title=東京事変のCDアルバムランキング|work=オリコン芸能人事典|publisher=[[オリコン]]|accessdate=2017-04-20}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span> 
+!備考
+|-
+| ミュージックビデオ集
+| 2004年12月8日
+| &#39;&#39;&#39;[[tokyo incidents vol.1]]&#39;&#39;&#39;
+| DVD
+| TOBF-5337
+| 5位
+| 
+|-
+| ライブ+ドキュメントビデオ
+| 2005年7月13日
+| &#39;&#39;&#39;[[Dynamite in]]&#39;&#39;&#39;
+| DVD
+| TOBF-5400
+| 2位
+| 
+|-
+| ライブビデオ
+| 2005年8月17日
+| &#39;&#39;&#39;[[Dynamite out]]&#39;&#39;&#39;
+| DVD
+| TOBF-5401
+| 2位
+| 
+|-
+| ミュージックビデオ集
+| 2006年3月23日
+| &#39;&#39;&#39;[[ADULT VIDEO]]&#39;&#39;&#39;
+| DVD
+| TOBF-5469
+| 4位
+| 
+|-
+| ライブビデオ
+| 2006年9月6日
+| &#39;&#39;&#39;[[Just can&#39;t help it.]]&#39;&#39;&#39;
+| DVD
+| TOBF-5497
+| 2位
+| 
+|-
+| ミュージックビデオ集
+| 2007年11月21日
+| &#39;&#39;&#39;[[閃光少女]]&#39;&#39;&#39;
+| DVD
+| TOBF-5540
+| 6位
+| 
+|-
+| rowspan=2 | ライブビデオ
+| 2010年3月26日
+| rowspan=2 | &#39;&#39;&#39;[[Spa <span class="ni">&amp;amp;</span> Treatment]]&#39;&#39;&#39;
+| rowspan=2 | DVD
+| kro-10001
+| - 位
+|  style=&quot;text-align:left&quot; |<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>ライブ会場・通信販売限定<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+| 2010年8月25日
+| QIFK-50105
+| 17位
+|  style=&quot;text-align:left&quot; |<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>一般販売<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+| rowspan=2 | ライブビデオ
+| 2010年8月25日
+| rowspan=2 | &#39;&#39;&#39;[[ウルトラC (東京事変の映像作品)|ウルトラC]]&#39;&#39;&#39;
+| DVD
+| TOBF-5678
+| 3位
+| rowspan=2 |
+|-
+| 2010年9月8日
+| [[Blu-ray Disc|BD]]
+| TOXF-5678
+| 1位
+|-
+| rowspan=2 | ミュージックビデオ集
+| rowspan=2 | 2011年9月21日
+| rowspan=2 | &#39;&#39;&#39;[[CS Channel]]&#39;&#39;&#39;
+| DVD
+| TOBF-5712
+| 4位
+| rowspan=2 | 
+|-
+| BD
+| TOXF-5712
+| 17位
+|-
+| rowspan=2 | ライブビデオ
+| rowspan=2 | 2012年2月15日
+| rowspan=2 | &#39;&#39;&#39;[[Discovery (東京事変の映像作品)|Discovery]]&#39;&#39;&#39;
+| DVD
+| TOBF-5723
+| 1位
+| rowspan=2 |
+|-
+| BD
+| TOXF-5723
+| 2位
+|-
+| rowspan=2 | ライブビデオ
+| rowspan=2 | 2012年6月13日
+| rowspan=2 | &#39;&#39;&#39;[[Bon Voyage (東京事変の映像作品)|Bon Voyage]]&#39;&#39;&#39;
+| DVD
+| TOBF-5737
+| 3位
+| rowspan=2 | 
+|-
+| BD
+| TOXF-5737
+| 1位
+|-
+| rowspan=2 | ライブビデオ
+| rowspan=2 | 2012年8月29日
+| rowspan=2 | &#39;&#39;&#39;[[珍プレー好プレー (東京事変の映像作品)|珍プレー好プレー]]&#39;&#39;&#39;
+| DVD
+| TOBF-5750
+| 1位
+| rowspan=2 | 
+|-
+| BD
+| TOXF-5750
+| 2位
+|-
+| rowspan=2 | ミュージックビデオ集
+| rowspan=2 | 2013年2月27日
+| rowspan=2 | &#39;&#39;&#39;[[Golden Time (東京事変の映像作品)|Golden Time]]&#39;&#39;&#39;
+| DVD
+| TOBF-5767
+| 11位
+| rowspan=2 |
+|-
+| BD
+| TOXF-5767
+| 10位
+|}
+
+=== 参加作品 ===
+* [[TOKIO]]
+: シングル『[[雨傘/あきれるくらい 僕らは願おう]]』（2008年9月3日） - 表題曲「雨傘」、通常盤のみ収録されている「渦中の男」の編曲を担当（作詞・作曲は椎名）。
+* [[ともさかりえ]]
+: アルバム『[[トリドリ。]]』（2009年6月24日） -「都会のマナー」の編曲・演奏を担当（作詞・作曲は椎名）。
+* [[PUFFY]]
+: シングル『[[日和姫]]』（2009年2月25日） - 表題曲「日和姫」の演奏に参加（作詞・作曲・編曲は椎名）。
+: アルバム『[[Bring it!]]』（2009年6月17日） -「日和姫」、「主演の女」の演奏に参加（作詞・作曲・編曲は椎名）。
+* [[栗山千明]]
+: シングル『[[おいしい季節/決定的三分間]]』（2011年3月2日） - 表題曲「おいしい季節」、「決定的三分間」の演奏に参加（作詞・作曲・編曲は椎名）。
+: シングル『[[月夜の肖像]]』（2011年11月23日） - 表題曲「月夜の肖像」、カップリング曲「青春の瞬き」の演奏に参加（作詞・作曲・編曲は椎名）。
+* [[椎名林檎]]
+: シングル『[[カーネーション (椎名林檎の曲)|カーネーション]]』（2011年11月2日） - 表題曲「カーネーション」、カップリング曲「私の愛するひと」、「人生は思い通り」の演奏に参加。
+=== 未音源化曲 ===
+* 「事変音頭」
+: 2004年に行われたいくつかの[[ロック・フェスティバル]]で披露された曲<span class="ni">&amp;lt;</span>ref name=&quot;channel guide&quot;<span class="ni">&amp;gt;</span>『チャンネルガイド -東京事変オフィシャルブック-』。<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。
+* 「ゴング」
+: 2006年のライブ・イベント「[[SOCIETY OF THE CITIZENS|SOCIETY OF THE CITIZENS vol.1]]」で披露された曲<span class="ni">&amp;lt;</span>ref name=&quot;channel guide&quot; /<span class="ni">&amp;gt;</span>。
+== ライブ ==
+=== コンサート・ツアー ===
+{| class=&quot;wikitable&quot; style=&quot;font-size:small; &quot;
+|-
+! 開催年
+! タイトル
+! 日程
+! 開催地
+! 備考
+|-
+|align=&quot;center&quot;|2003年
+|align=&quot;center&quot;|&#39;&#39;&#39;[[Electric Mole|椎名林檎 実演ツアー 雙六エクスタシー]]&#39;&#39;&#39;
+|align=&quot;center&quot;|8月23日 - 9月27日
+|
+|椎名林檎のソロツアー。
+|-
+|align=&quot;center&quot; rowspan=4|2005年
+|align=&quot;center&quot;|&#39;&#39;&#39;巻舌 発祥地記念 〜導火線はこちら〜 yokosuka dynamite!&#39;&#39;&#39;
+|align=&quot;center&quot;|1月15日
+|[[よこすか芸術劇場]]
+|東京事変 live tour 2005“dynamite!”の林檎班会員限定の公開[[ゲネプロ]]。
+|-
+|align=&quot;center&quot;|&#39;&#39;&#39;[[Dynamite out|東京事変 live tour 2005 “dynamite!”]]&#39;&#39;&#39;
+|align=&quot;center&quot;|1月17日 - 3月16日
+|松山、広島、金沢、京都、札幌、仙台、大阪、福岡、名古屋、渋谷
+|
+|-
+|align=&quot;center&quot; rowspan=2|&#39;&#39;&#39;[[第一回林檎班大会の模様|第1回林檎班大会 アダルト・オンリー]]&#39;&#39;&#39;
+|align=&quot;center&quot;| 12月12日・13日
+| 恵比寿ザ・ガーデンホール
+| rowspan=2|林檎班（ファンクラブ）会員限定イベント。
+|-
+|align=&quot;center&quot;| 12月20日・21日
+|[[UNIT|代官山UNIT]]
+|-
+|align=&quot;center&quot; rowspan=3|2006年
+|align=&quot;center&quot; rowspan=2|&#39;&#39;&#39;[[DOMESTIC! Virgin LINE|東京事変 “DOMESTIC!” Virgin LINE]]&#39;&#39;&#39;
+|align=&quot;center&quot;|2月19日
+|[[日本武道館]]
+| rowspan=2|新メンバーの顔見世ライブ。
+|-
+|align=&quot;center&quot;| 2月21日
+|[[大阪城ホール]]
+|-
+|align=&quot;center&quot;|&#39;&#39;&#39;[[Just can&#39;t help it.|東京事変 “DOMESTIC!” Just can&#39;t help it.]]&#39;&#39;&#39;
+|align=&quot;center&quot;|4月7日 - 5月30日
+|鎌倉、札幌、大宮、新潟、仙台、盛岡、福岡、倉敷、広島、京都、富山、名古屋、静岡、大阪、渋谷、沖縄
+|
+|-
+|align=&quot;center&quot;|2007年
+|align=&quot;center&quot;|&#39;&#39;&#39;[[Spa <span class="ni">&amp;amp;</span> Treatment|東京事変 live tour 2007 Spa <span class="ni">&amp;amp;</span> Treatment]]&#39;&#39;&#39;
+|align=&quot;center&quot;|10月18日 - 11月21日
+|横浜、名古屋、大阪、福岡、仙台、札幌、東京
+|[[ライブハウス]]ツアー。
+|-
+|align=&quot;center&quot;|2010年
+|align=&quot;center&quot;|&#39;&#39;&#39;[[ウルトラC (東京事変の映像作品)|東京事変 live tour 2010 ウルトラC]]&#39;&#39;&#39;
+|align=&quot;center&quot;|3月26日 - 5月23日
+|川口、宇都宮、新潟、長野、千葉、仙台、青森、福井、名古屋、福岡、大分、札幌、大阪、東京、高松、広島、島根、倉敷
+|
+|-
+|align=&quot;center&quot;|2011年
+|align=&quot;center&quot;|&#39;&#39;&#39;[[Discovery (東京事変の映像作品)|東京事変 Live Tour 2011 Discovery]]&#39;&#39;&#39;
+|align=&quot;center&quot;|9月30日 - 12月26日
+|府中、静岡、仙台、岩手、札幌、金沢、新潟、大宮、福岡、鹿児島、神戸、倉敷、広島、名古屋、神奈川、大阪、高松、東京、青森、いわき
+|
+|-
+|align=&quot;center&quot; rowspan=3|2012年
+|align=&quot;center&quot; rowspan=3|&#39;&#39;&#39;[[Bon Voyage (東京事変の映像作品)|東京事変 LiveTour 2012 Domestique Bon Voyage]]&#39;&#39;&#39;
+|align=&quot;center&quot;|2月14日・15日
+|[[横浜アリーナ]]
+| rowspan=3|ラストツアー。
+|-
+|2月21日・22日
+| 大阪城ホール
+|-
+| 2月28日・29日
+|日本武道館
+|-
+|}
+
+=== 出演イベント ===
+; デビュー前
+<span class="ni">&amp;lt;</span>div class=&quot;NavFrame&quot; style=&quot;clear: both; border:0;font-size:small;&quot;<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavHead&quot; style=&quot;text-align: center;&quot;<span class="ni">&amp;gt;</span>[[2003年]]<span class="ni">&amp;lt;</span>/div<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavContent&quot; style=&quot;text-align: left;font-size:small;&quot;<span class="ni">&amp;gt;</span>
+* [[7月18日]] - [[JIGHEAD]] / &quot;PSYHCHO JUSTICE レコ発 LIVE&quot; （[[ロフト (ライブハウス)|新宿ロフト]]）
+<span class="ni">&amp;lt;</span>/div<span class="ni">&amp;gt;&amp;lt;</span>/div<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavFrame&quot; style=&quot;clear: both; border:0;font-size:small;&quot;<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavHead&quot; style=&quot;text-align: center;&quot;<span class="ni">&amp;gt;</span>[[2004年]]<span class="ni">&amp;lt;</span>/div<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavContent&quot; style=&quot;text-align: left;font-size:small;&quot;<span class="ni">&amp;gt;</span>
+* 7月24日 - 0724 YAMABIKARI（[[チキンジョージ|神戸チキンジョージ]]）
+* 7月25日 - [[FM802#MEET THE WORLD BEAT|MEET THE WORLD BEAT]]
+* 7月30日 - [[フジ・ロック・フェスティバル#2004年|FUJI ROCK FESTIVAL &#39;04]]
+* 9月3日 - [[サンセットライブ#2004年|12th Sunset Live 2004]]
+<span class="ni">&amp;lt;</span>/div<span class="ni">&amp;gt;&amp;lt;</span>/div<span class="ni">&amp;gt;</span>
+; デビュー後
+<span class="ni">&amp;lt;</span>div class=&quot;NavFrame&quot; style=&quot;clear: both; border:0;font-size:small;&quot;<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavHead&quot; style=&quot;text-align: center;&quot;<span class="ni">&amp;gt;</span>[[2006年]]<span class="ni">&amp;lt;</span>/div<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavContent&quot; style=&quot;text-align: left;font-size:small;&quot;<span class="ni">&amp;gt;</span>
+* 7月2日 - [[SOCIETY OF THE CITIZENS|SOCIETY OF THE CITIZENS vol.1]]（[[日比谷野外音楽堂]]）
+* 12月30日 - [[COUNTDOWN JAPAN#COUNT DOWN JAPAN 06/07|COUNTDOWN JAPAN 06/07]]（[[幕張メッセ]]）
+* 12月31日 - COUNTDOWN JAPAN 06/07（[[インテックス大阪]]）
+<span class="ni">&amp;lt;</span>/div<span class="ni">&amp;gt;&amp;lt;</span>/div<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavFrame&quot; style=&quot;clear: both; border:0;font-size:small;&quot;<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavHead&quot; style=&quot;text-align: center;&quot;<span class="ni">&amp;gt;</span>[[2008年]]<span class="ni">&amp;lt;</span>/div<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavContent&quot; style=&quot;text-align: left;font-size:small;&quot;<span class="ni">&amp;gt;</span>
+* 8月15日 - [[ライジング・サン・ロックフェスティバル#2008年|RISING SUN ROCK FESTIVAL 2008 in EZO]]
+* 8月23日・24日 - [[SOCIETY OF THE CITIZENS|SOCIETY OF THE CITIZENS vol.2]]（[[JCBホール]]）
+<span class="ni">&amp;lt;</span>/div<span class="ni">&amp;gt;&amp;lt;</span>/div<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavFrame&quot; style=&quot;clear: both; border:0;font-size:small;&quot;<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavHead&quot; style=&quot;text-align: center;&quot;<span class="ni">&amp;gt;</span>[[2009年]]<span class="ni">&amp;lt;</span>/div<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavContent&quot; style=&quot;text-align: left;font-size:small;&quot;<span class="ni">&amp;gt;</span>
+* 12月30日 - [[COUNTDOWN JAPAN#COUNTDOWN JAPAN 09/10|COUNTDOWN JAPAN 09/10]]
+<span class="ni">&amp;lt;</span>/div<span class="ni">&amp;gt;&amp;lt;</span>/div<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavFrame&quot; style=&quot;clear: both; border:0;font-size:small;&quot;<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavHead&quot; style=&quot;text-align: center;&quot;<span class="ni">&amp;gt;</span>[[2010年]]<span class="ni">&amp;lt;</span>/div<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavContent&quot; style=&quot;text-align: left;font-size:small;&quot;<span class="ni">&amp;gt;</span>
+* 11月6日 - EMI ROCKS（[[さいたまスーパーアリーナ]]）
+<span class="ni">&amp;lt;</span>/div<span class="ni">&amp;gt;&amp;lt;</span>/div<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavFrame&quot; style=&quot;clear: both; border:0;font-size:small;&quot;<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavHead&quot; style=&quot;text-align: center;&quot;<span class="ni">&amp;gt;</span>[[2011年]]<span class="ni">&amp;lt;</span>/div<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavContent&quot; style=&quot;text-align: left;font-size:small;&quot;<span class="ni">&amp;gt;</span>
+* 9月24日 - [[テレビ朝日]]ドリームフェスティバル2011（日本武道館）
+<span class="ni">&amp;lt;</span>/div<span class="ni">&amp;gt;&amp;lt;</span>/div<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavFrame&quot; style=&quot;clear: both; border:0;font-size:small;&quot;<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavHead&quot; style=&quot;text-align: center;&quot;<span class="ni">&amp;gt;</span>[[2012年]]<span class="ni">&amp;lt;</span>/div<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>div class=&quot;NavContent&quot; style=&quot;text-align: left;font-size:small;&quot;<span class="ni">&amp;gt;</span>
+* 2月19日 - EMI ROCKS 2012（さいたまスーパーアリーナ）
+<span class="ni">&amp;lt;</span>/div<span class="ni">&amp;gt;&amp;lt;</span>/div<span class="ni">&amp;gt;</span>
+
+== タイアップ一覧 ==
+{| class=&quot;wikitable&quot; style=&quot;text-align:center&quot;
+|-
+! 起用年 !! 楽曲 !! タイアップ
+|-
+| 2004年
+| &#39;&#39;&#39;[[群青日和]]&#39;&#39;&#39;
+| style=&quot;text-align:left&quot; |<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>[[三洋電機]]「[[Au (携帯電話)|au]] [[W21SA]]」CMソング<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+| 2005年
+| &#39;&#39;&#39;[[修羅場 (曲)|修羅場]]&#39;&#39;&#39;
+| style=&quot;text-align:left&quot; |<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>[[フジテレビジョン|フジテレビ]]系[[ドラマ]]『[[木曜劇場]]・[[大奥 (フジテレビの時代劇)#2005年版『大奥〜華の乱〜』|大奥〜華の乱〜]]』主題歌<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+| 2007年
+| &#39;&#39;&#39;金魚の箱&#39;&#39;&#39;
+| style=&quot;text-align:left&quot; |<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>映画『[[魍魎の匣#映画|魍魎の匣]]』主題歌<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+| 2007年
+| &#39;&#39;&#39;[[閃光少女]]&#39;&#39;&#39;
+| style=&quot;text-align:left&quot; |<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>[[富士重工業|スバル]]「[[スバル・ステラ|ステラ/ステラリベスタ]]」「[[スバル・R2|R2]]」CMソング<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+| 2009年
+|&#39;&#39;&#39;[[能動的三分間]]&#39;&#39;&#39;
+| style=&quot;text-align:left&quot; |<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>[[江崎グリコ|グリコ]]「ウォータリングキスミント」CMソング（出演：椎名林檎、ナレーション：浮雲）<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+| 2010年
+| &#39;&#39;&#39;勝ち戦&#39;&#39;&#39;
+| style=&quot;text-align:left&quot; |<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>グリコ「ウォータリングキスミント」CMソング（出演：椎名林檎、ナレーション：浮雲）<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+| 2010年
+| &#39;&#39;&#39;ドーパミント!&#39;&#39;&#39;
+| style=&quot;text-align:left&quot; |<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>グリコ「ウォータリングキスミント」CMソング（出演：椎名林檎、ナレーション：伊澤一葉）<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+| 2011年
+| &#39;&#39;&#39;[[大発見|空が鳴っている]]&#39;&#39;&#39;
+| style=&quot;text-align:left&quot; |<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>グリコ「ウォータリングキスミント」CMソング（出演・ナレーション：椎名林檎）<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+| 2010年
+| &#39;&#39;&#39;天国へようこそ&#39;&#39;&#39;
+| style=&quot;text-align:left&quot; |<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>[[テレビ朝日]]系[[金曜ナイトドラマ]]『[[熱海の捜査官]]』主題歌<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|2010年
+|&#39;&#39;&#39;天国へようこそ Tokyo Bay Ver.&#39;&#39;&#39;
+|style=&quot;text-align:left&quot; |<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>[[テレビ朝日]]系[[金曜ナイトドラマ]]『[[熱海の捜査官]]』劇中使用曲<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|2011年
+|&#39;&#39;&#39;[[空が鳴っている/女の子は誰でも|女の子は誰でも]]&#39;&#39;&#39;
+|style=&quot;text-align:left&quot; |<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>[[資生堂]]「[[MAQuillAGE|マキアージュ]]」CMソング（出演・一部ナレーション：椎名林檎）<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|2011年
+|&#39;&#39;&#39;[[大発見|新しい文明開化]]&#39;&#39;&#39;
+|style=&quot;text-align:left&quot; |<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>[[東京地下鉄|東京メトロ]]CMソング<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|2018年
+|&#39;&#39;&#39;[[大人 (アダルト)|透明人間]]&#39;&#39;&#39;
+|style=&quot;text-align:left&quot; |<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>[[ライオン (企業)|ライオン]]「NONIO」CMソング<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|}
+
+== 書籍 ==
+=== 楽譜 ===
+全て[[リットーミュージック]]社より発売。
+* 「オフィシャル・スコア・ブック 教育」（2005年1月29日）
+* 「オフィシャル・スコア・ブック 大人 (アダルト)」（2006年2月23日）
+* 「オフィシャル・スコア・ブック 娯楽 (バラエティ)」 (2007年10月24日）
+* 「オフィシャル・スコア・ブック スポーツ」（2010年8月25日）
+* 「オフィシャル・スコア・ブック 大発見」（2011年9月30日）
+* 「オフィシャル・スコア・ブック color bars」（2012年11月30日）
+* 「オフィシャル・スコア・ブック 深夜枠」（2012年11月30日）
+
+=== オフィシャル・ブック ===
+* 「チャンネルガイド -東京事変オフィシャルブック-」（2012年2月29日、1万5000部限定販売）
+
+== アプリケーション ==
+* 「Bon Voyage 東京磁針」（2012年6月13日 - 12月31日）
+** 緯度経度、磁北を指すコンパスアプリ。[[iOS (アップル)|iOS]]端末（[[iPhone]]・[[iPad]]）に対応。
+* 「チャンネルガイド -東京事変オフィシャルブック-」（2012年8月29日）
+** オフィシャル・ブック「チャンネルガイド」をアプリ化したもの。iOS 5.0以上のiPhone・iPad・[[iPod touch]]とAndroid 2.2以上のAndroid端末（[[スマートフォン]]・[[タブレット (コンピュータ)|タブレット]]）に対応。
+
+== 脚注 ==
+=== 注釈 ===
+{{Reflist|group=&quot;注&quot;|2}}
+=== 出典 ===
+{{Reflist|2}}
+
+== 関連項目 ==
+* [[PE&#39;Z]]
+* [[あっぱ]]
+* [[ペトロールズ]]
+* [[ROCKIN&#39;ON JAPAN]]
+
+== 外部リンク ==
+* {{Official|https://tokyojihen.com/|東京事変公式ウェブサイト}}
+* [https://web.archive.org/web/20081202010431/http://www.emimusic.jp/vmc/artist/domestic/tokyojihen/ 東京事変 | Virgin Music Co. / EMI Music Japan] - [[Virgin Music]] による旧公式ウェブサイト
+* [https://www.kronekodow.com/ SR猫柳本線] - 椎名林檎、東京事変所属事務所公式ウェブサイト
+* {{YouTube|user=TokyoIncidentsVEVO}}
+
+{{東京事変}}
+
+{{DEFAULTSORT:とうきようしへん}}
+
+[[Category:日本のロック・バンド]]
+[[category:東京事変|*]]
+[[Category:EMIミュージック・ジャパンのアーティスト]]
+[[Category:2003年に結成したバンド]]
+[[Category:2012年に解散したバンド]]
+[[Category:フジロック・フェスティバル出演者]]<span class="nt">&lt;/rev&gt;</span>
+        <span class="nt">&lt;/revisions&gt;</span>
+      <span class="nt">&lt;/page&gt;</span>
+    <span class="nt">&lt;/pages&gt;</span>
+  <span class="nt">&lt;/query&gt;</span>
+<span class="nt">&lt;/api&gt;</span>
+</pre></div>
+</div><noscript><img src="//ja.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div><div class="printfooter">
+「<a dir="ltr" href="https://ja.wikipedia.org/wiki/特別:ApiHelp">https://ja.wikipedia.org/wiki/特別:ApiHelp</a>」から取得</div>
+			</div>
+		</div>
+
+		
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":81,"wgHostname":"mw1235"});});</script>		</body></html>
